@@ -1,2 +1,4 @@
-export const reactStrictMode = true;
-export const swcMinify = true;
+module.exports = {
+  reactStrictMode: true,
+  swcMinify: true
+}
