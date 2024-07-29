@@ -12,7 +12,7 @@ const Main = ({ children, router }) => {
 
             <NavBar path={router.asPath} />
 
-            <Container maxW="container.lg" pt={14}>
+            <Container maxW="container.lg" pt={14} className="perspective-rotator-container">
                 {children}
             </Container>
         </Box>

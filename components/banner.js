@@ -1,10 +1,11 @@
-import { Box, Center, Text } from '@chakra-ui/react'
+import { Box, Center, Button } from '@chakra-ui/react'
 
 const Banner = () => {
     return (
         <Box
             position="relative"
-            mb="6" h="80"
+            mb="6"
+            h="80"
             display="flex"
             justifyContent="center"
             alignItems="center"

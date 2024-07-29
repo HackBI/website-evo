@@ -1,7 +1,11 @@
 import {
     Container,
     Box,
+    HStack,
     Button,
+    Text,
+    Heading,
+    Image,
     Modal,
     ModalOverlay,
     ModalContent,
@@ -12,8 +16,9 @@ import {
     useDisclosure,
     useColorModeValue,
 } from '@chakra-ui/react'
-import Banner from '../components/banner'
+import { useEffect } from 'react'
 import Layout from '../components/layouts/article'
+import Banner from '../components/banner'
 
 const Page = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -30,9 +35,10 @@ const Page = () => {
                     textAlign="center"
                     bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
                 >
-                    <b>January 18-19, 2025</b>
+                    <Box pb='1'>
+                        <Text as='b'>January 18-19, 2025</Text>
+                    </Box>
 
-                    <br></br>
                     <Button onClick={onOpen}>Rain Date</Button>
 
                     <Modal isOpen={isOpen} onClose={onClose} isCentered>
@@ -51,6 +57,39 @@ const Page = () => {
                             </ModalFooter>
                         </ModalContent>
                     </Modal>
+                </Box>
+
+                <Box display={{ md: 'flex' }} mb={4}>
+                    <Box flexGrow={1}>
+                        <Heading as="h2" variant="page-title">
+                            HackBI
+                        </Heading>
+                        <p>A 24-hour Hackathon by students, for students</p>
+                    </Box>
+                    <Box
+                        flexShrink={0}
+                        mt={{ base: 4, md: 0 }}
+                        ml={{ md: 6 }}
+                        textAlign="center"
+                    >
+                        <Box
+                            borderColor="whiteAlpha.800"
+                            borderWidth={2}
+                            borderStyle="solid"
+                            w="100px"
+                            h="100px"
+                            display="inline-block"
+                            borderRadius="full"
+                            overflow="hidden"
+                        >
+                            <Image
+                                src="images/logo.png"
+                                alt="HackBI logo"
+                                width="100"
+                                height="100"
+                            />
+                        </Box>
+                    </Box>
                 </Box>
             </Container>
         </Layout>
