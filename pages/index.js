@@ -16,12 +16,14 @@ import {
     useDisclosure,
     useColorModeValue,
 } from '@chakra-ui/react'
-import { useEffect } from 'react'
+import { ChevronRightIcon } from '@chakra-ui/icons'
+import { useRouter } from 'next/router'
 import Layout from '../components/layouts/article'
 import Banner from '../components/banner'
 
 const Page = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
+    const router = useRouter()
 
     return (
         <Layout>
@@ -65,6 +67,8 @@ const Page = () => {
                             HackBI
                         </Heading>
                         <p>A 24-hour Hackathon by students, for students</p>
+                        <Button rightIcon={<ChevronRightIcon />}
+                        onClick={() => router.push('/register')}>Register Now</Button>
                     </Box>
                     <Box
                         flexShrink={0}
