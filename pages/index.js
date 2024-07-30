@@ -4,8 +4,8 @@ import {
     VStack,
     HStack,
     Button,
-    Text,
     Heading,
+    Text,
     Image,
     Modal,
     ModalOverlay,
@@ -23,6 +23,7 @@ import Layout from '../components/layouts/article'
 import Banner from '../components/banner'
 import { AboutCardText, AboutCardImage } from '../components/about-card'
 import AnimatedBox from '../components/animated-box'
+import Paragraph from '../components/paragraph'
 
 const Page = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -104,7 +105,10 @@ const Page = () => {
                 </AnimatedBox>
 
                 <AnimatedBox delay={0.3}>
-                    
+                    <Heading as="h3" variant="section-title">About</Heading>
+                    <Paragraph>
+                        
+                    </Paragraph>
 
                     <VStack>
                         <HStack>
