@@ -47,7 +47,7 @@ const Navbar = props => {
             w="100%"
             bg={useColorModeValue('#ffffff40', '#20202380')}
             css={{ backdropFilter: 'blur(10px)' }}
-            zIndex={2}
+            zIndex={3}
             {...props}
         >
             <Container
@@ -75,6 +75,9 @@ const Navbar = props => {
                     <LinkItem href="/register" path={path}>
                         Register
                     </LinkItem>
+                    <LinkItem href="/faq" path={path}>
+                        FAQ
+                    </LinkItem>
                     <LinkItem href="/workshops" path={path}>
                         Workshops
                     </LinkItem>
@@ -100,6 +103,9 @@ const Navbar = props => {
                                 </Link>
                                 <Link as={NextLink} href="/register" passHref>
                                     <MenuItem>Register</MenuItem>
+                                </Link>
+                                <Link as={NextLink} href="/faq" passHref>
+                                    <MenuItem>FAQ</MenuItem>
                                 </Link>
                                 <Link as={NextLink} href="/workshops" passHref>
                                     <MenuItem>Workshops</MenuItem>
