@@ -18,7 +18,7 @@ import {
     useColorModeValue,
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
-import { useRouter } from 'next/router'
+import NextLink from 'next/link'
 import Layout from '../components/layouts/article'
 import Banner from '../components/banner'
 import { AboutCardText, AboutCardImage } from '../components/about-card'
@@ -27,7 +27,6 @@ import Paragraph from '../components/paragraph'
 
 const Page = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
-    const router = useRouter()
 
     return (
         <Layout>
@@ -46,7 +45,7 @@ const Page = () => {
                             <Text as='b'>January 18-19, 2025</Text>
                         </Box>
 
-                        <Button onClick={onOpen}>Rain Date</Button>
+                        <Button onClick={onOpen} colorScheme='teal'>Rain Date</Button>
 
                         <Modal isOpen={isOpen} onClose={onClose} isCentered>
                             <ModalOverlay />
@@ -74,8 +73,12 @@ const Page = () => {
                                 HackBI
                             </Heading>
                             <p>A 24-hour Hackathon by students, for students</p>
-                            <Button rightIcon={<ChevronRightIcon />}
-                                onClick={() => router.push('/register')}>Register Now</Button>
+                            <Button
+                                as={NextLink}
+                                href="/register"
+                                rightIcon={<ChevronRightIcon />}
+                                colorScheme='teal'
+                            >Register Now</Button>
                         </Box>
                         <Box
                             flexShrink={0}
@@ -107,7 +110,7 @@ const Page = () => {
                 <AnimatedBox delay={0.3}>
                     <Heading as="h3" variant="section-title">About</Heading>
                     <Paragraph>
-                        
+
                     </Paragraph>
 
                     <VStack>
