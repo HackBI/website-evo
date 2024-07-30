@@ -1,6 +1,7 @@
 import {
     Container,
     Box,
+    Center,
     VStack,
     HStack,
     Button,
@@ -8,6 +9,8 @@ import {
     Text,
     Image,
     Link,
+    List,
+    ListItem,
     Modal,
     ModalOverlay,
     ModalContent,
@@ -19,6 +22,8 @@ import {
     useColorModeValue,
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
+import { IoLogoGithub, IoLogoInstagram } from 'react-icons/io5'
+import { PiXLogo } from 'react-icons/pi'
 import NextLink from 'next/link'
 import Layout from '../components/layouts/article'
 import Banner from '../components/banner'
@@ -134,6 +139,60 @@ const Page = () => {
                             <AboutCardImage text="Celebrate" src="images/about/celebrate.jpg" />
                         </HStack>
                     </VStack>
+                </AnimatedBox>
+
+                <AnimatedBox delay={0.4}>
+                    <Heading as="h3" variant="section-title">On the web</Heading>
+
+                    <List>
+                        <ListItem>
+                            <Link href="https://github.com/hackbi" target="_blank">
+                                <Button
+                                    variant="ghost"
+                                    colorScheme="teal"
+                                    leftIcon={<IoLogoGithub />}
+                                >
+                                    @hackbi
+                                </Button>
+                            </Link>
+                        </ListItem>
+                        <ListItem>
+                            <Link href="https://x.com/hackbiofficial" target="_blank">
+                                <Button
+                                    variant="ghost"
+                                    colorScheme="teal"
+                                    leftIcon={<PiXLogo />}
+                                >
+                                    @hackbiofficial
+                                </Button>
+                            </Link>
+                        </ListItem>
+                        <ListItem>
+                            <Link href="https://instagram.com/hackbiofficial" target="_blank">
+                                <Button
+                                    variant="ghost"
+                                    colorScheme="teal"
+                                    leftIcon={<IoLogoInstagram />}
+                                >
+                                    @hackbiofficial
+                                </Button>
+                            </Link>
+                        </ListItem>
+                    </List>
+                </AnimatedBox>
+
+                <AnimatedBox delay={0.5}>
+                    <Heading as="h3" variant="section-title">Sponsors</Heading>
+                    <Box textAlign="center">
+                        Interested in being a sponsor?{' '}
+                        <Link as={NextLink} href="/contact" passHref scroll={false}>
+                            Contact us!
+                        </Link>
+                    </Box>
+
+                    <Box>
+                        
+                    </Box>
                 </AnimatedBox>
             </Container>
         </Layout>
