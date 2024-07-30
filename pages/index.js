@@ -109,9 +109,14 @@ const Page = () => {
 
                 <AnimatedBox delay={0.3}>
                     <Heading as="h3" variant="section-title">About</Heading>
-                    <Paragraph>
-
-                    </Paragraph>
+                    <Box pb={2}>
+                        <Paragraph>
+                            HackBI is an annual hackathon for middle and high school students that has
+                            been run by the students of Bishop Ireton High School for 8 consecutive years.
+                            At HackBI, you will learn new things and collaborate with others to make your
+                            ideas come to life.
+                        </Paragraph>
+                    </Box>
 
                     <VStack>
                         <HStack>
