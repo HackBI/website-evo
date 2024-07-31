@@ -4,6 +4,7 @@ import {
     Center,
     VStack,
     HStack,
+    SimpleGrid,
     Button,
     Heading,
     Text,
@@ -30,6 +31,7 @@ import Banner from '../components/banner'
 import { AboutCardText, AboutCardImage } from '../components/about-card'
 import AnimatedBox from '../components/animated-box'
 import Paragraph from '../components/paragraph'
+import Sponsor from '../components/sponsor'
 
 const Page = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -38,80 +40,64 @@ const Page = () => {
         <Layout>
             <Banner />
 
-            <Container>
-                <AnimatedBox delay={0.1}>
-                    <Box
-                        borderRadius="lg"
-                        mb={6}
-                        p={3}
-                        textAlign="center"
-                        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-                    >
-                        <Box pb='1'>
-                            <Text as='b'>January 18-19, 2025</Text>
-                        </Box>
-
-                        <Button onClick={onOpen} colorScheme='teal'>Rain Date</Button>
-
-                        <Modal isOpen={isOpen} onClose={onClose} isCentered>
-                            <ModalOverlay />
-                            <ModalContent>
-                                <ModalHeader>HackBI Rain Date</ModalHeader>
-                                <ModalCloseButton />
-                                <ModalBody>
-                                    In case of any inclement weather, HackBI will occur on <b>January 25-26, 2025</b>.
-                                </ModalBody>
-
-                                <ModalFooter>
-                                    <Button colorScheme='blue' mr={3} onClick={onClose}>
-                                        Close
-                                    </Button>
-                                </ModalFooter>
-                            </ModalContent>
-                        </Modal>
-                    </Box>
-                </AnimatedBox>
-
-                <AnimatedBox delay={0.2}>
-                    <Box display={{ md: 'flex' }} mb={4}>
-                        <Box flexGrow={1}>
-                            <Heading as="h2" variant="page-title">
-                                HackBI
-                            </Heading>
-                            <p>A 24-hour Hackathon by students, for students</p>
-                            <Button
-                                as={NextLink}
-                                href="/register"
-                                rightIcon={<ChevronRightIcon />}
-                                colorScheme='teal'
-                            >Register Now</Button>
-                        </Box>
+            <Container maxW="container.lg">
+                <Container>
+                    <AnimatedBox delay={0.1}>
                         <Box
-                            flexShrink={0}
-                            mt={{ base: 4, md: 0 }}
-                            ml={{ md: 6 }}
+                            borderRadius="lg"
+                            mb={6}
+                            p={3}
                             textAlign="center"
+                            bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
                         >
+                            <Box pb='1'>
+                                <Text as='b'>January 18-19, 2025</Text>
+                            </Box>
+
+                            <Button onClick={onOpen} colorScheme='cyan'>Rain Date</Button>
+
+                            <Modal isOpen={isOpen} onClose={onClose} isCentered>
+                                <ModalOverlay />
+                                <ModalContent>
+                                    <ModalHeader>HackBI Rain Date</ModalHeader>
+                                    <ModalCloseButton />
+                                    <ModalBody>
+                                        In case of any inclement weather, HackBI will occur on <b>January 25-26, 2025</b>.
+                                    </ModalBody>
+
+                                    <ModalFooter>
+                                        <Button colorScheme='blue' mr={3} onClick={onClose}>
+                                            Close
+                                        </Button>
+                                    </ModalFooter>
+                                </ModalContent>
+                            </Modal>
+                        </Box>
+                    </AnimatedBox>
+
+                    <AnimatedBox delay={0.2}>
+                        <Box mb={4}>
+                            <Box flexGrow={1}>
+                                <Center>
+                                    <Button
+                                        as={NextLink}
+                                        href="/register"
+                                        rightIcon={<ChevronRightIcon />}
+                                        colorScheme='cyan'
+                                        size='lg'
+                                    >Register Now</Button>
+                                </Center>
+                            </Box>
                             <Box
-                                borderColor="whiteAlpha.800"
-                                borderWidth={2}
-                                borderStyle="solid"
-                                w="100px"
-                                h="100px"
-                                display="inline-block"
-                                borderRadius="full"
-                                overflow="hidden"
+                                flexShrink={0}
+                                mt={{ base: 4, md: 0 }}
+                                ml={{ md: 6 }}
+                                textAlign="center"
                             >
-                                <Image
-                                    src="images/logo.png"
-                                    alt="HackBI logo"
-                                    width="100"
-                                    height="100"
-                                />
                             </Box>
                         </Box>
-                    </Box>
-                </AnimatedBox>
+                    </AnimatedBox>
+                </Container>
 
                 <AnimatedBox delay={0.3}>
                     <Heading as="h3" variant="section-title">About</Heading>
@@ -190,16 +176,88 @@ const Page = () => {
                         </Link>
                     </Box>
 
-                    <Box>
-                        <Link href="https://bishopireton.org" target="_blank">
-                            <Image
-                                src="images/sponsors/bishopireton.png"
-                                alt="bishop ireton high school"
-                                width="100"
-                                height="100"
-                            />
-                        </Link>
-                    </Box>
+                    <SimpleGrid columns={[2, 3, 4]} gap={6}>
+                        <Sponsor
+                            href="https://bishopireton.org"
+                            title="Bishop Ireton High School"
+                            thumbnail="images/sponsors/bishopireton.png"
+                        />
+                        <Sponsor
+                            href="https://girlswhocode.com/"
+                            title="Girls Who Code"
+                            thumbnail="images/sponsors/girlswhocode.png"
+                        />
+                        <Sponsor
+                            href="https://sagcorp.com"
+                            title="SAG Corporation"
+                            thumbnail="images/sponsors/sag.png"
+                        />
+                        <Sponsor
+                            href="https://mydoctor.kaiserpermanente.org/mas/home/"
+                            title="Mid Atlantic Permanente Medical Group"
+                            thumbnail="images/sponsors/permanente.png"
+                        />
+                        <Sponsor
+                            href="https://rqs.umd.edu/"
+                            title="UMD NSF Institute for Robust Quantum Simulation"
+                            thumbnail="images/sponsors/nsfrqs.png"
+                        />
+                        <Sponsor
+                            href="https://jqi.umd.edu/"
+                            title="UMD Joint Quantum Institute"
+                            thumbnail="images/sponsors/jqi.png"
+                        />
+                        <Sponsor
+                            href="https://the-cs.org/"
+                            title="The Coding School"
+                            thumbnail="images/sponsors/tcs.png"
+                        />
+                        <Sponsor
+                            href="https://www.jimmyjohns.com/"
+                            title="Jimmy John's"
+                            thumbnail="images/sponsors/jj.png"
+                        />
+                        <Sponsor
+                            href="https://tealtech.com/"
+                            title="Teal"
+                            thumbnail="images/sponsors/teal.png"
+                        />
+                        <Sponsor
+                            href="https://mlh.io/"
+                            title="MLH"
+                            thumbnail="images/sponsors/mlh.png"
+                        />
+                        <Sponsor
+                            href="http://hackp.ac/mlh-StandOutStickers-hackathons"
+                            title="StandOut Stickers"
+                            thumbnail="images/sponsors/standoutstickers.png"
+                        />
+                        <Sponsor
+                            href="https://www.echo3d.com/"
+                            title="echo3D"
+                            thumbnail="images/sponsors/e3d.png"
+                        />
+                        <Sponsor
+                            href="https://www.thinkfun.com/"
+                            title="ThinkFun"
+                            thumbnail="images/sponsors/thinkfun.png"
+                        />
+                        <Sponsor
+                            href="https://www.4imprint.com/"
+                            title="4imprint"
+                            thumbnail="images/sponsors/4imprint.png"
+                        />
+                        <Sponsor
+                            href="https://www.dominos.com/en/"
+                            title="Domino's Pizza"
+                            thumbnail="images/sponsors/dominos.png"
+                        />
+                        <Sponsor
+                            href="https://gen.xyz/"
+                            title="XYZ"
+                            thumbnail="images/sponsors/xyz.png"
+                        />
+                    </SimpleGrid>
                 </AnimatedBox>
             </Container>
         </Layout>
