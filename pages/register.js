@@ -91,13 +91,13 @@ const Register = () => {
 
                             <Box>
                                 <Box>
-                                    <Link href="/res/guest_permission_form.pdf" target="_blank" download="HackBI Guest Permission Form">
+                                    <Link href="/forms/guest_permission_form.pdf" target="_blank" download="HackBI Guest Permission Form">
                                         Guest Permission Form
                                     </Link>
                                 </Box>
                             </Box>
                             <Box>
-                                <Link href="/res/emergency_care_form.pdf" target="_blank" download="HackBI Emergency Care Form">
+                                <Link href="/forms/emergency_care_form.pdf" target="_blank" download="HackBI Emergency Care Form">
                                     Emergency Care Form
                                 </Link>
                             </Box>
