@@ -191,7 +191,14 @@ const Page = () => {
                     </Box>
 
                     <Box>
-                        
+                        <Link href="https://bishopireton.org" target="_blank">
+                            <Image
+                                src="images/sponsors/bishopireton.png"
+                                alt="bishop ireton high school"
+                                width="100"
+                                height="100"
+                            />
+                        </Link>
                     </Box>
                 </AnimatedBox>
             </Container>
