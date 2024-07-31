@@ -8,13 +8,10 @@ import {
     Button
 } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
-import Banner from '../components/banner'
 
 const NotFound = () => {
     return (
         <Layout>
-            <Banner />
-
             <Container>
                 <Heading as="h1">Not found</Heading>
                 <Text>This is not the page you are looking for.</Text>
