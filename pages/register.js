@@ -131,7 +131,7 @@ const Register = () => {
 
                             <Heading as="h3" variant="section-title">Mentors</Heading>
                             <Text fontSize="xs">
-                                Offer technical guidance and advice to hackers
+                                Offer technical advice and guidance to hackers
                             </Text>
                             <Link href="https://signupgenius.com" target="_blank">
                                 <Button
