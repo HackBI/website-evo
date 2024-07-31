@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { Box, Container } from '@chakra-ui/react'
 import NavBar from '../navbar'
+import Banner from '../banner'
 import Footer from '../footer'
 
 const Main = ({ children, router }) => {
@@ -14,7 +15,9 @@ const Main = ({ children, router }) => {
 
             <NavBar path={router.asPath} />
 
-            <Container maxW="container.lg" pt={14} className="perspective-rotator-container">
+            <Container maxW="container.lg" pt={14}>
+                <Banner />
+
                 {children}
 
                 <Footer />

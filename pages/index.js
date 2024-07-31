@@ -38,8 +38,6 @@ const Page = () => {
 
     return (
         <Layout>
-            <Banner />
-
             <Container maxW="container.lg">
                 <Container>
                     <AnimatedBox delay={0.1}>
@@ -75,7 +73,7 @@ const Page = () => {
                         </Box>
                     </AnimatedBox>
 
-                    <AnimatedBox delay={0.2}>
+                    <AnimatedBox delay={0.15}>
                         <Box mb={4}>
                             <Box flexGrow={1}>
                                 <Center>
@@ -99,7 +97,7 @@ const Page = () => {
                     </AnimatedBox>
                 </Container>
 
-                <AnimatedBox delay={0.3}>
+                <AnimatedBox delay={0.2}>
                     <Heading as="h3" variant="section-title">About</Heading>
                     <Box pb={2}>
                         <Paragraph>
@@ -127,7 +125,7 @@ const Page = () => {
                     </VStack>
                 </AnimatedBox>
 
-                <AnimatedBox delay={0.4}>
+                <AnimatedBox delay={0.25}>
                     <Heading as="h3" variant="section-title">On the web</Heading>
 
                     <List>
@@ -167,7 +165,7 @@ const Page = () => {
                     </List>
                 </AnimatedBox>
 
-                <AnimatedBox delay={0.5}>
+                <AnimatedBox delay={0.3}>
                     <Heading as="h3" variant="section-title">Sponsors</Heading>
                     <Box textAlign="center">
                         Interested in being a sponsor?{' '}
