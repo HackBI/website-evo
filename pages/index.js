@@ -114,7 +114,7 @@ const Index = () => {
                     <VStack>
                         <HStack>
                             <AboutCardText text="Learn" src="images/about/learn.jpg" />
-                            <AboutCardText text="Collaborate" src="images/about/collaborate.jpg" />
+                            <AboutCardText text="Unite" src="images/about/collaborate.jpg" />
                         </HStack>
 
                         <HStack>
