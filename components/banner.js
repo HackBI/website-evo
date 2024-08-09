@@ -1,4 +1,4 @@
-import { Box, Center, Button } from '@chakra-ui/react'
+import { Box, Center } from '@chakra-ui/react'
 
 const Banner = () => {
     return (

@@ -30,7 +30,7 @@ const Register = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
 
     return (
-        <Layout>
+        <Layout title="Register">
             <Container maxW="container.md">
                 <AnimatedBox delay={0.1}>
                     <Box

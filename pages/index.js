@@ -32,7 +32,7 @@ import AnimatedBox from '../components/animated-box'
 import Paragraph from '../components/paragraph'
 import SponsorBlock from '../components/sponsor-block'
 
-const Page = () => {
+const Index = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
 
     return (
@@ -172,4 +172,4 @@ const Page = () => {
     )
 }
 
-export default Page
+export default Index
