@@ -3,7 +3,7 @@ import {
     Badge,
 } from '@chakra-ui/react'
 import Layout from "../../components/layouts/article";
-import { Title, WorkImage, Meta } from '../../components/workshop'
+import { Title } from '../../components/workshop'
 import Paragraph from '../../components/paragraph';
 
 const ComputerHardware = () => {
