@@ -13,7 +13,7 @@ const HTML = () => {
         <Layout title="HTML">
             <Container>
                 <Title>
-                    HTML <Badge>Karissa Dinh, Chloe Jackson, Sariel Angelo Cruz</Badge>
+                    HTML <Badge>Karissa Dinh | Chloe Jackson | Sariel Angelo Cruz</Badge>
                 </Title>
 
                 <Paragraph>
