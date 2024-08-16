@@ -13,7 +13,7 @@ const SponsorBlock = () => {
             <Heading as="h3" variant="section-title">Sponsors</Heading>
             <Box textAlign="center">
                 Interested in being a sponsor?{' '}
-                <Link as={NextLink} href="/contact" passHref scroll={false}>
+                <Link as={NextLink} href="/contact">
                     Contact us!
                 </Link>
             </Box>

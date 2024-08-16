@@ -28,7 +28,6 @@ export const WorkshopGridItem = ({
         <LinkBox
             as={NextLink}
             href={`/${category}/${id}`}
-            scroll={false}
             cursor="pointer"
         >
             <Image

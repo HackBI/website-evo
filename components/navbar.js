@@ -25,8 +25,6 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
         <Link
             as={NextLink}
             href={href}
-            passHref
-            scroll={false}
             p={2}
             bg={active ? 'grassTeal' : undefined}
             color={active ? '#202023' : inactiveColor}
@@ -114,31 +112,26 @@ const Navbar = props => {
                                 aria-label="Options"
                             />
                             <MenuList>
-                                <Link as={NextLink} href="/" passHref>
+                                <Link as={NextLink} href="/">
                                     <MenuItem>Home</MenuItem>
                                 </Link>
-                                <Link as={NextLink} href="/register" passHref>
+                                <Link as={NextLink} href="/register">
                                     <MenuItem>Register</MenuItem>
                                 </Link>
-                                <Link as={NextLink} href="/faq" passHref>
+                                <Link as={NextLink} href="/faq">
                                     <MenuItem>FAQ</MenuItem>
                                 </Link>
-                                <Link as={NextLink} href="/workshops" passHref>
+                                <Link as={NextLink} href="/workshops">
                                     <MenuItem>Workshops</MenuItem>
                                 </Link>
-                                <Link as={NextLink} href="/team" passHref>
+                                <Link as={NextLink} href="/team">
                                     <MenuItem>Team</MenuItem>
                                 </Link>
-                                <Link as={NextLink} href="/contact" passHref>
+                                <Link as={NextLink} href="/contact">
                                     <MenuItem>Contact</MenuItem>
                                 </Link>
-                                <Link>
-                                    <MenuItem
-                                        as={Link}
-                                        href="https://github.com/devinlinux/hackbi-website"
-                                    >
-                                        View Source
-                                    </MenuItem>
+                                <Link href="https://github.com/devinlinux/hackbi-website">
+                                    <MenuItem>View Source</MenuItem>
                                 </Link>
                             </MenuList>
                         </Menu>
