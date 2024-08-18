@@ -40,6 +40,7 @@ const PreRegister = () => {
         const apiKey = process.env.NEXT_PUBLIC_PICKET_API_KEY
 
         const payload = {
+            api_key: "",
             name,
             email,
             grade_level: parseInt(gradeLevel, 10)
