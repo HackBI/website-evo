@@ -17,7 +17,8 @@ require('dotenv').config()
 
 const Contact = () => {
 
-    const [name, setName] = useState('');
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
@@ -30,8 +31,8 @@ const Contact = () => {
         const apiKey = process.env.NEXT_PUBLIC_PICKET_API_KEY
 
         const payload = {
-            api_key: apiKey,
-            name,
+            firstName,
+            lastName,
             email,
             subject,
             message,
@@ -76,11 +77,19 @@ const Contact = () => {
                         <form onSubmit={handleSubmit}>
                             <VStack spacing={4}>
                                 <FormControl isRequired>
-                                    <FormLabel>Name</FormLabel>
+                                    <FormLabel>First Name</FormLabel>
                                     <Input
                                         type="text"
-                                        value={name}
-                                        onChange={(e) => setName(e.target.value)}
+                                        value={firstName}
+                                        onChange={(e) => setFirstName(e.target.value)}
+                                    />
+                                </FormControl>
+                                <FormControl isRequired>
+                                    <FormLabel>Last Name</FormLabel>
+                                    <Input
+                                        type="text"
+                                        value={lastName}
+                                        onChange={(e) => setLastName(e.target.value)}
                                     />
                                 </FormControl>
                                 <FormControl isRequired>
