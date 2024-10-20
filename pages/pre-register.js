@@ -23,12 +23,13 @@ import React, { useState } from 'react';
 import Layout from '../components/layouts/article';
 import AnimatedBox from "../components/animated-box";
 import Paragraph from "../components/paragraph";
-require('dotenv').config()
+require('dotenv').config();
 
 const PreRegister = () => {
-    const { isOpen, onOpen, onClose } = useDisclosure()
+    const { isOpen, onOpen, onClose } = useDisclosure();
 
-    const [name, setName] = useState('');
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
     const [gradeLevel, setGradeLevel] = useState('');
     const toast = useToast();
@@ -36,14 +37,27 @@ const PreRegister = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const apiURL = process.env.NEXT_PUBLIC_PICKET_API_URL
-        const apiKey = process.env.NEXT_PUBLIC_PICKET_API_KEY
+        const apiURL = process.env.NEXT_PUBLIC_PICKET_API_URL;
+        const apiKey = process.env.NEXT_PUBLIC_PICKET_API_KEY;
+
+        const gradeLevelInt = parseInt(gradeLevel, 10);
+        if (isNaN(gradeLevelInt) || gradeLevelInt <= 0) {
+            toast({
+                title: "Invalid Grade Level",
+                description: "Please enter a positive integer for the grade level.",
+                status: "error",
+                duration: 5000,
+                isClosable: true,
+            });
+            return;
+        }
 
         const payload = {
-            api_key: "",
-            name,
+            api_key: apiKey,
+            firstName,
+            lastName,
             email,
-            grade_level: parseInt(gradeLevel, 10)
+            grade_level: gradeLevelInt,
         };
 
         try {
@@ -52,7 +66,7 @@ const PreRegister = () => {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify(payload)
+                body: JSON.stringify(payload),
             });
 
             if (!response.ok) {
@@ -117,7 +131,7 @@ const PreRegister = () => {
                     <Heading as="h3" variant="section-title">Get Notified</Heading>
                     <Paragraph>
                         Enter your name, email address, and current grade level to be added to
-                        our email list to be ontified when registration is open
+                        our email list to be notified when registration is open.
                     </Paragraph>
                 </Box>
 
@@ -126,11 +140,19 @@ const PreRegister = () => {
                         <form onSubmit={handleSubmit}>
                             <VStack spacing={4}>
                                 <FormControl isRequired>
-                                    <FormLabel>Name</FormLabel>
+                                    <FormLabel>First Name</FormLabel>
                                     <Input
                                         type="text"
-                                        value={name}
-                                        onChange={(e) => setName(e.target.value)}
+                                        value={firstName}
+                                        onChange={(e) => setFirstName(e.target.value)}
+                                    />
+                                </FormControl>
+                                <FormControl isRequired>
+                                    <FormLabel>Last Name</FormLabel>
+                                    <Input
+                                        type="text"
+                                        value={lastName}
+                                        onChange={(e) => setLastName(e.target.value)}
                                     />
                                 </FormControl>
                                 <FormControl isRequired>
@@ -158,7 +180,7 @@ const PreRegister = () => {
                 </AnimatedBox>
             </Container>
         </Layout>
-    )
-}
+    );
+};
 
-export default PreRegister
+export default PreRegister;
