@@ -23,6 +23,7 @@ import React, { useState } from 'react';
 import Layout from '../components/layouts/article';
 import AnimatedBox from "../components/animated-box";
 import Paragraph from "../components/paragraph";
+import CryptoJS from 'crypto-js';
 require('dotenv').config();
 
 const PreRegister = () => {
@@ -34,11 +35,54 @@ const PreRegister = () => {
     const [gradeLevel, setGradeLevel] = useState('');
     const toast = useToast();
 
+    const computeSecret = (apiKey, hashKey, timestamp, iterations, firstSubIndex, secondSubIndex, splitIndex) => {
+        const time1 = timestamp.slice(0, splitIndex);
+        const time2 = timestamp.slice(splitIndex);
+
+        console.log("TIME 1: " + time1);
+        console.log("TIME 2: " + time2);
+
+        let secret = apiKey.slice(0, firstSubIndex) + time1 + apiKey.slice(firstSubIndex, secondSubIndex) + time2 + apiKey.slice(secondSubIndex);
+
+        secret = "api1729477michael_c727vY^@Uesp%^a3XD2Jyqp&TDU@"
+        console.log("COMBINED: " + secret);
+
+        let secretBytes = CryptoJS.enc.Utf8.parse(secret);
+
+        for (let i = 0; i < iterations; i++) {
+            let hmac = CryptoJS.HmacSHA256(secretBytes, hashKey);
+            secretBytes = hmac;
+        }
+
+        return secretBytes.toString(CryptoJS.enc.Hex);
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+        await init();
+
         const apiURL = process.env.NEXT_PUBLIC_PICKET_API_URL;
         const apiKey = process.env.NEXT_PUBLIC_PICKET_API_KEY;
+        const hashKey = process.env.NEXT_PUBLIC_PICKET_HASH_KEY;
+        const timestamp = Math.floor(Date.now() / 1000).toString();
+        const iterations = process.env.NEXT_PUBLIC_PICKET_HASH_ITERATIONS;
+        const firstSubIndex = process.env.NEXT_PUBLIC_PICKET_FIRST_SUB_INDEX;
+        const secondSubIndex = process.env.NEXT_PUBLIC_PICKET_SECONG_SUB_INDEX;
+        const splitIndex = process.env.NEXT_PUBLIC_PICKET_SPLIT_INDEX;
+
+        const secret = computeSecret(
+            apiKey.toString(),
+            hashKey.toString(),
+            "1729477727",
+            parseInt(iterations, 10),
+            parseInt(firstSubIndex, 10),
+            parseInt(secondSubIndex, 10),
+            parseInt(splitIndex, 10)
+        );
+
+        console.log(timestamp)
+        console.log(secret)
 
         const gradeLevelInt = parseInt(gradeLevel, 10);
         if (isNaN(gradeLevelInt) || gradeLevelInt <= 0) {
@@ -53,9 +97,8 @@ const PreRegister = () => {
         }
 
         const payload = {
-            api_key: apiKey,
-            firstName,
-            lastName,
+            first_name: firstName,
+            last_name: lastName,
             email,
             grade_level: gradeLevelInt,
         };
@@ -65,12 +108,14 @@ const PreRegister = () => {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    'x-request-timestamp': "1729477727",
+                    'x-request-secret': "ffec537267696f763fb6440e8b0e1f1e38cdd6aa33b1ad0f6c51888f7b29564b",
                 },
                 body: JSON.stringify(payload),
             });
 
             if (!response.ok) {
-                throw new Error('Network response was not ok');
+                throw new Error(`Error ${response.status}: ${responseBody}`);
             }
 
             toast({
