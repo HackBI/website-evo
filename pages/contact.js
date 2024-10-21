@@ -13,6 +13,7 @@ import {
 import React, { useState } from 'react';
 import Layout from '../components/layouts/article';
 import AnimatedBox from "../components/animated-box";
+import CryptoJS from 'crypto-js';
 require('dotenv').config()
 
 const Contact = () => {
@@ -24,43 +25,77 @@ const Contact = () => {
     const [message, setMessage] = useState('');
     const toast = useToast();
 
+    const computeSecret = (apiKey, hashKey, timestamp, iterations, firstSubIndex, secondSubIndex, splitIndex) => {
+        const time1 = timestamp.substring(0, splitIndex);
+        const time2 = timestamp.substring(splitIndex);
+
+        let secret = apiKey.substring(0, firstSubIndex) + time1 + apiKey.substring(firstSubIndex, secondSubIndex) + time2 + apiKey.substring(secondSubIndex);
+
+        let secretBytes = CryptoJS.enc.Utf8.parse(secret);
+
+        for (let i = 0; i < iterations; i++) {
+            let hmac = CryptoJS.HmacSHA256(secretBytes, hashKey);
+            secretBytes = hmac;
+        }
+
+        return secretBytes.toString(CryptoJS.enc.Hex);
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const apiURL = process.env.NEXT_PUBLIC_PICKET_API_URL
-        const apiKey = process.env.NEXT_PUBLIC_PICKET_API_KEY
+        const apiURL = process.env.NEXT_PUBLIC_PICKET_API_URL;
+        const apiKey = process.env.NEXT_PUBLIC_PICKET_API_KEY;
+        const hashKey = process.env.NEXT_PUBLIC_PICKET_HASH_KEY;
+        const timestamp = Math.floor(Date.now() / 1000).toString();
+        const iterations = process.env.NEXT_PUBLIC_PICKET_HASH_ITERATIONS;
+        const firstSubIndex = process.env.NEXT_PUBLIC_PICKET_FIRST_SUB_INDEX;
+        const secondSubIndex = process.env.NEXT_PUBLIC_PICKET_SECOND_SUB_INDEX;
+        const splitIndex = process.env.NEXT_PUBLIC_PICKET_SPLIT_INDEX;
+
+        const secret = computeSecret(
+            apiKey.toString(),
+            hashKey.toString(),
+            timestamp.toString(),
+            parseInt(iterations, 10),
+            parseInt(firstSubIndex, 10),
+            parseInt(secondSubIndex, 10),
+            parseInt(splitIndex, 10)
+        );
 
         const payload = {
-            firstName,
-            lastName,
+            first_name: firstName,
+            last_name: lastName,
             email,
             subject,
             message,
         };
 
         try {
-            const response = await fetch(`${apiURL}/`, {
+            const response = await fetch(`${apiURL}/contact`, {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
+                    'x-request-timestamp': timestamp,
+                    'x-request-secret': secret,
                 },
                 body: JSON.stringify(payload)
             });
 
             if (!response.ok) {
-                throw new Error('Network response was not ok');
+                throw new Error(`Error ${response.status}: ${response.statusText}`);
             }
 
             toast({
                 title: "Success!",
-                description: "Your registration was submitted.",
+                description: "Your message was submitted.",
                 status: "success",
                 duration: 5000,
                 isClosable: true,
             });
         } catch (error) {
             toast({
-                title: "An error occurred.",
+                title: "An error occurred while processing, try again later",
                 description: error.message,
                 status: "error",
                 duration: 5000,
