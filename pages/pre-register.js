@@ -105,7 +105,8 @@ const PreRegister = () => {
             });
 
             if (!response.ok) {
-                throw new Error(`Error ${response.status}: ${response.statusText}`);
+                const errorMsg = await response.text()
+                throw new Error(`${errorMsg}`);
             }
 
             toast({
@@ -117,7 +118,7 @@ const PreRegister = () => {
             });
         } catch (error) {
             toast({
-                title: "An error occurred while processing, try again later",
+                title: "An error occurred while processing:",
                 description: error.message,
                 status: "error",
                 duration: 5000,
