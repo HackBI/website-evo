@@ -36,16 +36,10 @@ const PreRegister = () => {
     const toast = useToast();
 
     const computeSecret = (apiKey, hashKey, timestamp, iterations, firstSubIndex, secondSubIndex, splitIndex) => {
-        const time1 = timestamp.slice(0, splitIndex);
-        const time2 = timestamp.slice(splitIndex);
+        const time1 = timestamp.substring(0, splitIndex);
+        const time2 = timestamp.substring(splitIndex);
 
-        console.log("TIME 1: " + time1);
-        console.log("TIME 2: " + time2);
-
-        let secret = apiKey.slice(0, firstSubIndex) + time1 + apiKey.slice(firstSubIndex, secondSubIndex) + time2 + apiKey.slice(secondSubIndex);
-
-        secret = "api1729477michael_c727vY^@Uesp%^a3XD2Jyqp&TDU@"
-        console.log("COMBINED: " + secret);
+        let secret = apiKey.substring(0, firstSubIndex) + time1 + apiKey.substring(firstSubIndex, secondSubIndex) + time2 + apiKey.substring(secondSubIndex);
 
         let secretBytes = CryptoJS.enc.Utf8.parse(secret);
 
@@ -60,29 +54,25 @@ const PreRegister = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        await init();
-
         const apiURL = process.env.NEXT_PUBLIC_PICKET_API_URL;
         const apiKey = process.env.NEXT_PUBLIC_PICKET_API_KEY;
         const hashKey = process.env.NEXT_PUBLIC_PICKET_HASH_KEY;
         const timestamp = Math.floor(Date.now() / 1000).toString();
         const iterations = process.env.NEXT_PUBLIC_PICKET_HASH_ITERATIONS;
         const firstSubIndex = process.env.NEXT_PUBLIC_PICKET_FIRST_SUB_INDEX;
-        const secondSubIndex = process.env.NEXT_PUBLIC_PICKET_SECONG_SUB_INDEX;
+        const secondSubIndex = process.env.NEXT_PUBLIC_PICKET_SECOND_SUB_INDEX;
         const splitIndex = process.env.NEXT_PUBLIC_PICKET_SPLIT_INDEX;
 
         const secret = computeSecret(
             apiKey.toString(),
             hashKey.toString(),
-            "1729477727",
+            timestamp.toString(),
             parseInt(iterations, 10),
             parseInt(firstSubIndex, 10),
             parseInt(secondSubIndex, 10),
             parseInt(splitIndex, 10)
         );
 
-        console.log(timestamp)
-        console.log(secret)
 
         const gradeLevelInt = parseInt(gradeLevel, 10);
         if (isNaN(gradeLevelInt) || gradeLevelInt <= 0) {
@@ -108,8 +98,8 @@ const PreRegister = () => {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'x-request-timestamp': "1729477727",
-                    'x-request-secret': "ffec537267696f763fb6440e8b0e1f1e38cdd6aa33b1ad0f6c51888f7b29564b",
+                    'x-request-timestamp': timestamp,
+                    'x-request-secret': secret,
                 },
                 body: JSON.stringify(payload),
             });
