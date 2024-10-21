@@ -75,7 +75,7 @@ const Register = () => {
                             <Center>
                                 <Button
                                     as={NextLink}
-                                    href="https://eventbrite.com"
+                                    href="https://www.eventbrite.com/e/hackbi-viii-tickets-1008426840827"
                                     colorScheme='red'
                                     target="_blank"
                                     leftIcon={<SiEventbrite />}
@@ -89,18 +89,22 @@ const Register = () => {
                             </Paragraph>
                             <Divider my={6} />
 
-                            <Box>
+                            <Center>
                                 <Box>
-                                    <Link href="/forms/guest_permission_form.pdf" target="_blank" download="HackBI Guest Permission Form">
-                                        Guest Permission Form
+                                    <Box>
+                                        <Link href="/forms/guest_permission_form.pdf" target="_blank" download="HackBI Guest Permission Form">
+                                            Guest Permission Form
+                                        </Link>
+                                    </Box>
+                                </Box>
+                            </Center>
+                            <Center>
+                                <Box>
+                                    <Link href="/forms/emergency_care_form.pdf" target="_blank" download="HackBI Emergency Care Form">
+                                        Emergency Care Form
                                     </Link>
                                 </Box>
-                            </Box>
-                            <Box>
-                                <Link href="/forms/emergency_care_form.pdf" target="_blank" download="HackBI Emergency Care Form">
-                                    Emergency Care Form
-                                </Link>
-                            </Box>
+                            </Center>
                         </Box>
 
                         <Spacer />
@@ -119,7 +123,7 @@ const Register = () => {
                             <Text fontSize="xs">
                                 Supervise and monitor students
                             </Text>
-                            <Link href="https://signupgenius.com" target="_blank">
+                            <Link href="https://www.signupgenius.com/go/60B054DAAAA2CA6FF2-52416101-hack" target="_blank">
                                 <Button
                                     variant="ghost"
                                     color={useColorModeValue('#3d7aed', '#ff63c3')}
@@ -133,7 +137,7 @@ const Register = () => {
                             <Text fontSize="xs">
                                 Offer technical advice and guidance to hackers
                             </Text>
-                            <Link href="https://signupgenius.com" target="_blank">
+                            <Link href="https://www.signupgenius.com/go/60B054DAAAA2CA6FF2-52416199-hack" target="_blank">
                                 <Button
                                     variant="ghost"
                                     color={useColorModeValue('#3d7aed', '#ff63c3')}
@@ -147,7 +151,7 @@ const Register = () => {
                             <Text fontSize="xs">
                                 Attend student presentations and choose the best projects to receive prizes
                             </Text>
-                            <Link href="https://signupgenius.com" target="_blank">
+                            <Link href="https://www.signupgenius.com/go/60B054DAAAA2CA6FF2-52416142-hack" target="_blank">
                                 <Button
                                     variant="ghost"
                                     color={useColorModeValue('#3d7aed', '#ff63c3')}
