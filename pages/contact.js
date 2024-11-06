@@ -56,7 +56,7 @@ const Contact = () => {
         const secret = computeSecret(
             apiKey.toString(),
             hashKey.toString(),
-            timestamp.toString(),
+            timestamp,
             parseInt(iterations, 10),
             parseInt(firstSubIndex, 10),
             parseInt(secondSubIndex, 10),
