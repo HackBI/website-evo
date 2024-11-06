@@ -54,8 +54,8 @@ const Contact = () => {
         const splitIndex = process.env.NEXT_PUBLIC_PICKET_SPLIT_INDEX;
 
         const secret = computeSecret(
-            apiKey.toString(),
-            hashKey.toString(),
+            apiKey,
+            hashKey,
             timestamp,
             parseInt(iterations, 10),
             parseInt(firstSubIndex, 10),
