@@ -121,4 +121,3 @@ const Workshops = () => {
 }
 
 export default Workshops
-export { getServerSideProps } from '../components/chakra'
