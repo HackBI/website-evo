@@ -83,6 +83,10 @@ jobs:
           NEXT_PUBLIC_PICKET_FIRST_SUB_INDEX: ${{ secrets.NEXT_PUBLIC_PICKET_FIRST_SUB_INDEX }}
           NEXT_PUBLIC_PICKET_SECOND_SUB_INDEX: ${{ secrets.NEXT_PUBLIC_PICKET_SECOND_SUB_INDEX }}
           NEXT_PUBLIC_PICKET_SPLIT_INDEX: ${{ secrets.NEXT_PUBLIC_PICKET_SPLIT_INDEX }}
+      - name: Debug environment variables
+        run: |
+          echo "NEXT_PUBLIC_PICKET_API_URL=${{ secrets.NEXT_PUBLIC_PICKET_API_URL }}"
+          echo "NEXT_PUBLIC_PICKET_API_KEY=${{ secrets.NEXT_PUBLIC_PICKET_API_KEY }}"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
