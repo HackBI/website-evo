@@ -53,6 +53,8 @@ const Contact = () => {
         const secondSubIndex = String(process.env.NEXT_PUBLIC_PICKET_SECOND_SUB_INDEX);
         const splitIndex = String(process.env.NEXT_PUBLIC_PICKET_SPLIT_INDEX);
 
+        console.log(apiURL);
+
         const secret = computeSecret(
             apiKey,
             hashKey,
