@@ -44,14 +44,14 @@ const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const apiURL = process.env.NEXT_PUBLIC_PICKET_API_URL;
-        const apiKey = process.env.NEXT_PUBLIC_PICKET_API_KEY;
-        const hashKey = process.env.NEXT_PUBLIC_PICKET_HASH_KEY;
+        const apiURL = String(process.env.NEXT_PUBLIC_PICKET_API_URL);
+        const apiKey = String(process.env.NEXT_PUBLIC_PICKET_API_KEY);
+        const hashKey = String(process.env.NEXT_PUBLIC_PICKET_HASH_KEY);
         const timestamp = Math.floor(Date.now() / 1000).toString();
-        const iterations = process.env.NEXT_PUBLIC_PICKET_HASH_ITERATIONS;
-        const firstSubIndex = process.env.NEXT_PUBLIC_PICKET_FIRST_SUB_INDEX;
-        const secondSubIndex = process.env.NEXT_PUBLIC_PICKET_SECOND_SUB_INDEX;
-        const splitIndex = process.env.NEXT_PUBLIC_PICKET_SPLIT_INDEX;
+        const iterations = String(process.env.NEXT_PUBLIC_PICKET_HASH_ITERATIONS);
+        const firstSubIndex = String(process.env.NEXT_PUBLIC_PICKET_FIRST_SUB_INDEX);
+        const secondSubIndex = String(process.env.NEXT_PUBLIC_PICKET_SECOND_SUB_INDEX);
+        const splitIndex = String(process.env.NEXT_PUBLIC_PICKET_SPLIT_INDEX);
 
         const secret = computeSecret(
             apiKey,
