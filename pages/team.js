@@ -105,12 +105,6 @@ const Team = () => {
             bio: "Hi, my name is David De Costa. I have been programming and creating games for about 7 years. I'm excited to teach Unity and help with Middle School!"
         },
         {
-            src: "images/team/jenny.jpg",
-            name: "Jenny Dee",
-            role: "Middle School Team",
-            bio: "Hey guys!! My name is Jenny Dee and I'm so excited to be part of Hack BI this year. This will be my first year of being part of the Hack BI team. Besides from volunteering, you can find me at the ice rink because I am a figure skating coach as well as a solo competitor. Can't wait to see y'all's hacking talents!"
-        },
-        {
             src: "images/team/zoe.png",
             name: "Zoe Rodriguez-Orellana",
             role: "Middle School Team",
