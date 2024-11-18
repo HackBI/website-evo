@@ -24,7 +24,6 @@ import { FaRegLightbulb } from "react-icons/fa6"
 import NextLink from "next/link"
 import Layout from "../components/layouts/article"
 import AnimatedBox from "../components/animated-box"
-import Paragraph from "../components/paragraph"
 
 const Register = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -114,7 +113,7 @@ const Register = () => {
                             Sign-up to be an adult volunteer, mentor, or judge!
                             <Divider my={6} />
 
-                            <Heading as="h3" variant="section-title">Supervisors</Heading>
+                            <Heading as="h3" variant="section-title">Adult Volunteers</Heading>
                             <Text fontSize="xs">
                                 Supervise and monitor students
                             </Text>

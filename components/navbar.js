@@ -86,6 +86,9 @@ const Navbar = props => {
                     <LinkItem href="/contact" path={path}>
                         Contact
                     </LinkItem>
+                    <LinkItem href="/conduct" path={path}>
+                        Conduct
+                    </LinkItem>
                     <LinkItem
                         target="_blank"
                         href="https://github.com/devinlinux/hackbi-website"
@@ -129,6 +132,9 @@ const Navbar = props => {
                                 </Link>
                                 <Link as={NextLink} href="/contact">
                                     <MenuItem>Contact</MenuItem>
+                                </Link>
+                                <Link as={NextLink} href="/conduct">
+                                    <MenuItem>Conduct</MenuItem>
                                 </Link>
                                 <Link href="https://github.com/devinlinux/hackbi-website">
                                     <MenuItem>View Source</MenuItem>
