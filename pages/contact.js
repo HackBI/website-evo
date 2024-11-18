@@ -5,6 +5,7 @@ import {
     FormControl,
     FormLabel,
     Input,
+    Textarea,
     Link,
     Text,
     VStack,
@@ -21,6 +22,14 @@ const Contact = () => {
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
     const toast = useToast();
+
+    const handleMessageChange = (e) => {
+        setMessage(e.target.value);
+
+        const textarea = e.target;
+        textarea.style.height = 'auto';
+        textarea.style.height = `${textarea.scrollHeight}px`;
+    };
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -71,10 +80,13 @@ const Contact = () => {
                                 </FormControl>
                                 <FormControl isRequired>
                                     <FormLabel>Message</FormLabel>
-                                    <Input
-                                        type="text"
+                                    <Textarea
                                         value={message}
-                                        onChange={(e) => setMessage(e.target.value)}
+                                        onChange={handleMessageChange}
+                                        placeholder="Enter your message here"
+                                        resize="none"
+                                        minHeight="150px"
+                                        style={{ overflow: 'hidden', resize: 'none' }}
                                     />
                                 </FormControl>
                                 <Button type="submit" bg="cardinal" width="full">
