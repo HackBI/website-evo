@@ -1,6 +1,7 @@
 import {
     Container,
     Box,
+    Link,
     Heading,
     Accordion,
     AccordionItem,
@@ -91,7 +92,7 @@ const FAQ = () => {
                         <AccordionPanel pb={4} bg={bgColor} rounded="md">
                             HackBI is open to all high schoolers, who will do a full 24 hours of hacking, and middle schoolers, who hack for a day.
                             <br /><br />
-                            If you're an adult and would like to come, consider <a href="/pre-register" style={{ textDecoration: 'underline' }}>volunteering</a>!
+                            If you're an adult and would like to come, consider <Link href="/register" style={{ textDecoration: 'underline' }}>volunteering</Link>!
                         </AccordionPanel>
                     </AccordionItem>
 
