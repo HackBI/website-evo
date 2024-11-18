@@ -44,7 +44,7 @@ const Register = () => {
                             <Text as='b'>January 18-19, 2025</Text>
                         </Box>
 
-                        <Button onClick={onOpen} colorScheme='cyan'>Rain Date</Button>
+                        <Button onClick={onOpen} bg='cardinal'>Rain Date</Button>
 
                         <Modal isOpen={isOpen} onClose={onClose} isCentered>
                             <ModalOverlay />
@@ -76,17 +76,15 @@ const Register = () => {
                                 <Button
                                     as={NextLink}
                                     href="https://www.eventbrite.com/e/hackbi-viii-tickets-1008426840827"
-                                    colorScheme='red'
+                                    bg='cardinal'
                                     target="_blank"
                                     leftIcon={<SiEventbrite />}
                                 >Register</Button>
                             </Center>
 
                             <Heading as="h3" variant="section-title">Forms</Heading>
-                            <Paragraph>
-                                Non-Ireton students must print, fill out, and bring
-                                the forms to the hackathon
-                            </Paragraph>
+                            Non-Ireton students must print, fill out, and bring
+                            the forms to the hackathon
                             <Divider my={6} />
 
                             <Center>
@@ -113,10 +111,7 @@ const Register = () => {
                             <Center>
                                 <Heading as="h3" variant="section-title">Adult Registration</Heading>
                             </Center>
-
-                            <Paragraph>
-                                Sign-up to be an adult volunteer, mentor, or judge!
-                            </Paragraph>
+                            Sign-up to be an adult volunteer, mentor, or judge!
                             <Divider my={6} />
 
                             <Heading as="h3" variant="section-title">Supervisors</Heading>

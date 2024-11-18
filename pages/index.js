@@ -51,7 +51,7 @@ const Index = () => {
                                 <Text as='b'>January 18-19, 2025</Text>
                             </Box>
 
-                            <Button onClick={onOpen} colorScheme='cyan'>Rain Date</Button>
+                            <Button onClick={onOpen} bg='cardinal'>Rain Date</Button>
 
                             <Modal isOpen={isOpen} onClose={onClose} isCentered>
                                 <ModalOverlay />
@@ -63,7 +63,7 @@ const Index = () => {
                                     </ModalBody>
 
                                     <ModalFooter>
-                                        <Button colorScheme='blue' mr={3} onClick={onClose}>
+                                        <Button bg='cardinal' mr={3} onClick={onClose}>
                                             Close
                                         </Button>
                                     </ModalFooter>
@@ -80,7 +80,7 @@ const Index = () => {
                                         as={NextLink}
                                         href="/register"
                                         rightIcon={<ChevronRightIcon />}
-                                        colorScheme='cyan'
+                                        bg='cardinal'
                                         size='lg'
                                     >Register Now</Button>
                                 </Center>

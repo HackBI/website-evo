@@ -77,7 +77,7 @@ const Contact = () => {
                                         onChange={(e) => setMessage(e.target.value)}
                                     />
                                 </FormControl>
-                                <Button type="submit" colorScheme="cyan" width="full">
+                                <Button type="submit" bg="cardinal" width="full">
                                     Submit
                                 </Button>
                                 <Text fontSize="sm" color="gray.500" align="center">
