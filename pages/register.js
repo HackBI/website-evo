@@ -120,7 +120,7 @@ const Register = () => {
                             <Link href="https://www.signupgenius.com/go/60B054DAAAA2CA6FF2-52416101-hack" target="_blank">
                                 <Button
                                     variant="ghost"
-                                    color={useColorModeValue('#3d7aed', '#ff63c3')}
+                                    color={useColorModeValue('#f0a822', '#f0a822')}
                                     leftIcon={<FaRegLightbulb />}
                                 >
                                     Sign Up!
@@ -134,7 +134,7 @@ const Register = () => {
                             <Link href="https://www.signupgenius.com/go/60B054DAAAA2CA6FF2-52416199-hack" target="_blank">
                                 <Button
                                     variant="ghost"
-                                    color={useColorModeValue('#3d7aed', '#ff63c3')}
+                                    color={useColorModeValue('#f0a822', '#f0a822')}
                                     leftIcon={<FaRegLightbulb />}
                                 >
                                     Sign Up!
@@ -148,7 +148,7 @@ const Register = () => {
                             <Link href="https://www.signupgenius.com/go/60B054DAAAA2CA6FF2-52416142-hack" target="_blank">
                                 <Button
                                     variant="ghost"
-                                    color={useColorModeValue('#3d7aed', '#ff63c3')}
+                                    color={useColorModeValue('#f0a822', '#f0a822')}
                                     leftIcon={<FaRegLightbulb />}
                                 >
                                     Sign Up!
