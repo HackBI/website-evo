@@ -13,7 +13,7 @@ const Python = () => {
         <Layout title="Python">
             <Container>
                 <Title>
-                    Python <Badge>Jake Clark | Virginia Cheatham</Badge>
+                    Python <Badge>Emilio Burneo | Virginia Cheatham</Badge>
                 </Title>
 
                 <Paragraph>
