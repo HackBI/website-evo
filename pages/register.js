@@ -40,7 +40,7 @@ const Register = () => {
                         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
                     >
                         <Box pb='1'>
-                            <Text as='b'>January 18-19, 2025</Text>
+                            <Text as='b' fontSize='xl'>January 18-19, 2025</Text>
                         </Box>
 
                         <Button onClick={onOpen} bg='cardinal'>Rain Date</Button>
