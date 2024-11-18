@@ -13,7 +13,7 @@ import Layout from "../components/layouts/article"
 
 const FAQ = () => {
     const bgColor = useColorModeValue('gray.100', 'gray.700')
-    const headingColor = useColorModeValue('red.500', 'red.300')
+    const headingColor = useColorModeValue('#b02010', '#b02010')
 
     return (
         <Layout title="FAQ">
