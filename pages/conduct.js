@@ -9,7 +9,7 @@ import Paragraph from '../components/paragraph'
 
 const Conduct = () => {
     return (
-        <Layout>
+        <Layout title="Conduct">
             <Container maxW="container.lg">
                 <AnimatedBox delay={0.1}>
                     <Heading as="h3" variant="section-title">
