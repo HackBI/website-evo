@@ -17,6 +17,7 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { IoLogoGithub } from 'react-icons/io5'
 import ThemeToggleButton from './theme-toggle-button'
+import TrustBadge from './trust-badge'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
     const active = path === href
@@ -144,6 +145,7 @@ const Navbar = props => {
                     </Box>
                 </Box>
             </Container>
+            <TrustBadge></TrustBadge>
         </Box>
     )
 }
