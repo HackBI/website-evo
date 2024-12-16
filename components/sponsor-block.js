@@ -20,84 +20,59 @@ const SponsorBlock = () => {
 
             <SimpleGrid columns={[2, 3, 4]} gap={6}>
                 <Sponsor
-                    href="https://bishopireton.org"
+                    href="https://www.bishopireton.org"
                     title="Bishop Ireton High School"
                     thumbnail="images/sponsors/bishopireton.png"
                 />
                 <Sponsor
-                    href="https://girlswhocode.com/"
-                    title="Girls Who Code"
-                    thumbnail="images/sponsors/girlswhocode.png"
-                />
-                <Sponsor
-                    href="https://sagcorp.com"
-                    title="SAG Corporation"
-                    thumbnail="images/sponsors/sag.png"
-                />
-                <Sponsor
-                    href="https://mydoctor.kaiserpermanente.org/mas/home/"
-                    title="Mid Atlantic Permanente Medical Group"
-                    thumbnail="images/sponsors/permanente.png"
-                />
-                <Sponsor
-                    href="https://rqs.umd.edu/"
-                    title="UMD NSF Institute for Robust Quantum Simulation"
-                    thumbnail="images/sponsors/nsfrqs.png"
-                />
-                <Sponsor
-                    href="https://jqi.umd.edu/"
-                    title="UMD Joint Quantum Institute"
-                    thumbnail="images/sponsors/jqi.png"
-                />
-                <Sponsor
-                    href="https://the-cs.org/"
-                    title="The Coding School"
-                    thumbnail="images/sponsors/tcs.png"
-                />
-                <Sponsor
-                    href="https://www.jimmyjohns.com/"
-                    title="Jimmy John's"
-                    thumbnail="images/sponsors/jj.png"
-                />
-                <Sponsor
-                    href="https://tealtech.com/"
-                    title="Teal"
-                    thumbnail="images/sponsors/teal.png"
-                />
-                <Sponsor
-                    href="https://mlh.io/"
+                    href="https://www.mlh.io"
                     title="MLH"
                     thumbnail="images/sponsors/mlh.png"
                 />
                 <Sponsor
-                    href="http://hackp.ac/mlh-StandOutStickers-hackathons"
-                    title="StandOut Stickers"
-                    thumbnail="images/sponsors/standoutstickers.png"
+                    href="https://www.catholic.edu"
+                    title="Catholic University of America"
+                    thumbnail="images/sponsors/cua.png"
                 />
                 <Sponsor
-                    href="https://www.echo3d.com/"
-                    title="echo3D"
-                    thumbnail="images/sponsors/e3d.png"
-                />
-                <Sponsor
-                    href="https://www.thinkfun.com/"
-                    title="ThinkFun"
-                    thumbnail="images/sponsors/thinkfun.png"
-                />
-                <Sponsor
-                    href="https://www.4imprint.com/"
-                    title="4imprint"
+                    href="https://www.4imprint.com"
+                    title="4Imprint"
                     thumbnail="images/sponsors/4imprint.png"
                 />
                 <Sponsor
-                    href="https://www.dominos.com/en/"
-                    title="Domino's Pizza"
+                    href="https://www.dominos.com"
+                    title="Dominos Pizza"
                     thumbnail="images/sponsors/dominos.png"
                 />
                 <Sponsor
-                    href="https://gen.xyz/"
+                    href="https://www.standoutstickers.com"
+                    title="Stand Out Stickers"
+                    thumbnail="images/sponsors/standout_stickers.png"
+                />
+                <Sponsor
+                    href="https://www.jmu.edu"
+                    title="James Madison University"
+                    thumbnail="images/sponsors/jmu.png"
+                />
+                <Sponsor
+                    href="https://gen.xyz"
                     title="XYZ"
                     thumbnail="images/sponsors/xyz.png"
+                />
+                <Sponsor
+                    href="https://www.potbelly.com"
+                    title="Potbelly's"
+                    thumbnail="images/sponsors/potbelly.png"
+                />
+                <Sponsor
+                    href="https://www.edgesource.com"
+                    title="Edgesource"
+                    thumbnail="images/sponsors/es.png"
+                />
+                <Sponsor
+                    href="https://sarahpetersonphoto.com"
+                    title="Sarah Peterson Photography"
+                    thumbnail="images/sponsors/photograph.png"
                 />
             </SimpleGrid>
         </Box>
