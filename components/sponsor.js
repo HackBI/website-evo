@@ -1,4 +1,10 @@
-import { Box, Text, LinkBox, LinkOverlay, Image, Center } from '@chakra-ui/react'
+import {
+    Box,
+    LinkBox,
+    LinkOverlay,
+    Image,
+    Center
+} from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 
 export const Sponsor = ({ href, title, thumbnail }) => (
@@ -16,7 +22,6 @@ export const Sponsor = ({ href, title, thumbnail }) => (
                 />
             </Center>
             <LinkOverlay href={href} target="_blank">
-                <Text mt={2}>{title}</Text>
             </LinkOverlay>
         </LinkBox>
     </Box>

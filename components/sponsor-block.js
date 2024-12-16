@@ -70,9 +70,14 @@ const SponsorBlock = () => {
                     thumbnail="images/sponsors/es.png"
                 />
                 <Sponsor
-                    href="https://sarahpetersonphoto.com"
+                    href="https://www.sarahpetersonphoto.com"
                     title="Sarah Peterson Photography"
                     thumbnail="images/sponsors/photograph.png"
+                />
+                <Sponsor
+                    href="https://vt.edu"
+                    title="Virginia Tech"
+                    thumbnail="images/sponsors/vt.png"
                 />
             </SimpleGrid>
         </Box>
