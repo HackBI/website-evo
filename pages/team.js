@@ -21,16 +21,16 @@ const Team = () => {
             bio: "Hello! I am Nora Hixson a Senior at Bishop Ireton and I am so excited to be this year's Hack BI Co-director. This is my third year on the Hack BI team and I look forward to sharing all the skills that I have learned to make Hack BI VIII great. When I am not doing my Co-Director duties you can find me swimming or playing video games."
         },
         {
-            src: "images/team/rory.jpg",
-            name: "Rory McGuire",
-            role: "Events Team Leader",
-            bio: "Hello HackBI Hackers! My name is Rory McGuire, and I'm excited for my fifth BI Hackathon (I snuck in an extra one in middle school)! I'm heading the events team to make sure our workshops are integrated smoothly into your HackBI experience, but you'll also see me running a few of the workshops myself. Outside of HackBI, you may find me lifeguarding, running, hiking, or perhaps trimming a few strokes off my golf game. I can't wait to see you all at the school in January and discover what amazing projects you put together!"
-        },
-        {
             src: "images/team/jake.jpg",
             name: "Jake Clark",
             role: "Logistics Team Leader",
             bio: "Hello everyone, I'm Jake Clark, a senior, and the leader of the logistics team this year. If you ever have any questions about programming in general feel free to ask, so I can direct you to someone who can actually understand your question. When I'm not attempting to draw shapes in python I am usually playing guitar or soccer. I look forward to seeing you at HackBI."
+        },
+        {
+            src: "images/team/rory.jpg",
+            name: "Rory McGuire",
+            role: "Events Team Leader",
+            bio: "Hello HackBI Hackers! My name is Rory McGuire, and I'm excited for my fifth BI Hackathon (I snuck in an extra one in middle school)! I'm heading the events team to make sure our workshops are integrated smoothly into your HackBI experience, but you'll also see me running a few of the workshops myself. Outside of HackBI, you may find me lifeguarding, running, hiking, or perhaps trimming a few strokes off my golf game. I can't wait to see you all at the school in January and discover what amazing projects you put together!"
         },
         {
             src: "images/team/marykate.png",
