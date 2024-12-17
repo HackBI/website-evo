@@ -24,7 +24,14 @@ export const WorkshopGridItem = ({
     title,
     src
 }) => (
-    <Box w="100%" textAlign="center">
+    <Box
+        w="100%"
+        textAlign="center"
+        _hover={{
+            transform: 'scale(1.05)',
+            transition: 'transform 0.3s ease',
+        }}
+    >
         <LinkBox
             as={NextLink}
             href={`/${category}/${id}`}
