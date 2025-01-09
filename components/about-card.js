@@ -1,6 +1,7 @@
 import {
     HStack,
     Box,
+    Text,
     Center,
     Image,
     useColorModeValue,
@@ -35,7 +36,9 @@ export const AboutCardImage = ({ text, src }) => {
                     <Image src={src} alt={text} borderRadius={4} />
                 </Box>
                 <Box width="40%">
-                    <Center>{text}</Center>
+                    <Center>
+                        <Text>{text}</Text>
+                    </Center>
                 </Box>
             </HStack>
         </Box>
