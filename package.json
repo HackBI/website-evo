@@ -1,33 +1,33 @@
 {
-  "name": "hackbi",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "dev": "next dev -H 0.0.0.0",
-    "build": "next build",
-    "prettier": "prettier -write .",
-    "lint": "next lint"
-  },
-  "keywords": [],
-  "author": "Michael Bobrowski",
-  "license": "GPL2",
-  "description": "The HackBI Website",
-  "dependencies": {
-    "@chakra-ui/icons": "^2.1.1",
-    "@chakra-ui/react": "^2.8.2",
-    "@emotion/react": "^11.13.0",
-    "@emotion/styled": "^11.13.0",
-    "crypto-js": "^4.2.0",
-    "dotenv": "^16.4.5",
-    "framer-motion": "^11.3.8",
-    "next": "^14.2.5",
-    "nextjs-cors": "^2.2.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-icons": "^5.2.1"
-  },
-  "devDependencies": {
-    "eslint": "^8.57.0",
-    "eslint-config-next": "^14.2.5"
-  }
+    "name": "hackbi",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "dev": "next dev -H 0.0.0.0",
+        "build": "next build",
+        "prettier": "prettier -write .",
+        "lint": "next lint"
+    },
+    "keywords": [],
+    "author": "Michael Bobrowski",
+    "license": "GPL2",
+    "description": "The HackBI Website",
+    "dependencies": {
+        "@chakra-ui/icons": "^2.1.1",
+        "@chakra-ui/react": "^2.8.2",
+        "@emotion/react": "^11.13.0",
+        "@emotion/styled": "^11.13.0",
+        "crypto-js": "^4.2.0",
+        "dotenv": "^16.4.5",
+        "framer-motion": "^11.3.8",
+        "next": "^14.2.5",
+        "nextjs-cors": "^2.2.0",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-icons": "^5.2.1"
+    },
+    "devDependencies": {
+        "eslint": "^8.57.0",
+        "eslint-config-next": "^14.2.5"
+    }
 }
