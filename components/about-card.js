@@ -15,7 +15,13 @@ export const AboutCardText = ({ text, src }) => {
         >
             <HStack spacing={0}>
                 <Box width="40%">
-                    <Center>{text}</Center>
+                    <Center>
+                        <Text
+                            fontSize="calc(10px + 1vw)"
+                        >
+                            {text}
+                        </Text>
+                    </Center>
                 </Box>
                 <Box width="60%">
                     <Image src={src} alt={text} borderRadius={4} />
@@ -37,7 +43,11 @@ export const AboutCardImage = ({ text, src }) => {
                 </Box>
                 <Box width="40%">
                     <Center>
-                        <Text>{text}</Text>
+                        <Text
+                            fontSize="calc(10px + 1vw)"
+                        >
+                            {text}
+                        </Text>
                     </Center>
                 </Box>
             </HStack>
