@@ -3,7 +3,7 @@ import {
     LinkBox,
     LinkOverlay,
     Image,
-    Center
+    Center,
 } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 
@@ -23,6 +23,26 @@ export const Sponsor = ({ href, title, thumbnail }) => (
             </Center>
             <LinkOverlay href={href} target="_blank">
             </LinkOverlay>
+        </LinkBox>
+    </Box>
+)
+
+export const SponsorXL = ({ href, title, thumbnail }) => (
+    <Box w="100%" textAlign="center">
+        <LinkBox cursor="pointer">
+            <Center>
+                <Image
+                    src={thumbnail}
+                    width="200"
+                    height="200"
+                    alt={title}
+                    className="sponsor-thumbnail"
+                    placeholder="blur"
+                    loading="lazy"
+                    objectFit="contain"
+                />
+            </Center>
+            <LinkOverlay href={href} target="_blank"></LinkOverlay>
         </LinkBox>
     </Box>
 )

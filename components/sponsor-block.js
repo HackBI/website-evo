@@ -1,13 +1,25 @@
 import {
     Box,
+    Center,
     SimpleGrid,
     Heading,
     Link,
+    Divider,
+    useColorModeValue,
 } from "@chakra-ui/react"
 import { NextLink } from "next/link"
 import Sponsor from "./sponsor"
+import { SponsorXL } from "./sponsor"
+import Paragraph from '../components/paragraph'
 
 const SponsorBlock = () => {
+    const fourImprintImg = `images/sponsors/4imprint${useColorModeValue('-light', '-dark')}.png`
+    const mlhImg = `images/sponsors/mlh${useColorModeValue('-light', '-dark')}.png`
+    const photographImg = `images/sponsors/photograph${useColorModeValue('-light', '-dark')}.png`
+    const mohawkImg = `images/sponsors/mohawk${useColorModeValue('-light', '-dark')}.png`
+    const cuaImg = `images/sponsors/cua${useColorModeValue('-light', '-dark')}.png`
+    const edgesourceImg = `images/sponsors/es${useColorModeValue('-light', '-dark')}.png`
+
     return (
         <Box>
             <Heading as="h3" variant="section-title">Sponsors</Heading>
@@ -18,31 +30,62 @@ const SponsorBlock = () => {
                 </Link>
             </Box>
 
-            <SimpleGrid columns={[2, 3, 4]} gap={6}>
-                <Sponsor
+            <Box my={2}>
+                <Center>
+                    <Paragraph>
+                        A special thanks to our <strong>Platinum</strong> Sponsors:
+                    </Paragraph>
+                </Center>
+            </Box>
+
+            <SimpleGrid columns={[1, 2, 2]} gap={6} spacingX="12px">
+                <SponsorXL
                     href="https://www.bishopireton.org"
                     title="Bishop Ireton High School"
                     thumbnail="images/sponsors/bishopireton.png"
                 />
+                <SponsorXL
+                    href="https://www.edgesource.com"
+                    title="Edgesource"
+                    thumbnail={edgesourceImg}
+                />
+            </SimpleGrid>
+
+            <Divider my={6} borderColor="gold" borderWidth="2px" />
+
+            <Box my={2}>
+                <Center>
+                    <Paragraph>
+                        Thanks to our <strong>2025</strong> Sponsors:
+                    </Paragraph>
+                </Center>
+            </Box>
+
+            <SimpleGrid columns={[2, 3, 4]} gap={6}>
                 <Sponsor
                     href="https://www.mlh.io"
                     title="MLH"
-                    thumbnail="images/sponsors/mlh.png"
+                    thumbnail={mlhImg}
                 />
                 <Sponsor
                     href="https://www.catholic.edu"
                     title="Catholic University of America"
-                    thumbnail="images/sponsors/cua.png"
+                    thumbnail={cuaImg}
                 />
                 <Sponsor
                     href="https://www.4imprint.com"
                     title="4Imprint"
-                    thumbnail="images/sponsors/4imprint.png"
+                    thumbnail={fourImprintImg}
                 />
                 <Sponsor
                     href="https://www.dominos.com"
                     title="Dominos Pizza"
                     thumbnail="images/sponsors/dominos.png"
+                />
+                <Sponsor
+                    href="https://www.mohawkgames.com"
+                    title="Mohawk Games"
+                    thumbnail={mohawkImg}
                 />
                 <Sponsor
                     href="https://www.standoutstickers.com"
@@ -65,14 +108,9 @@ const SponsorBlock = () => {
                     thumbnail="images/sponsors/potbelly.png"
                 />
                 <Sponsor
-                    href="https://www.edgesource.com"
-                    title="Edgesource"
-                    thumbnail="images/sponsors/es.png"
-                />
-                <Sponsor
                     href="https://www.sarahpetersonphoto.com"
                     title="Sarah Peterson Photography"
-                    thumbnail="images/sponsors/photograph.png"
+                    thumbnail={photographImg}
                 />
                 <Sponsor
                     href="https://vt.edu"
