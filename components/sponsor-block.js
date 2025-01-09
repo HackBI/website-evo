@@ -2,6 +2,8 @@ import {
     Box,
     Center,
     SimpleGrid,
+    Grid,
+    GridItem,
     Heading,
     Link,
     Divider,
@@ -38,18 +40,22 @@ const SponsorBlock = () => {
                 </Center>
             </Box>
 
-            <SimpleGrid columns={[1, 2, 2]} gap={6} spacingX="12px">
-                <SponsorXL
-                    href="https://www.bishopireton.org"
-                    title="Bishop Ireton High School"
-                    thumbnail="images/sponsors/bishopireton.png"
-                />
-                <SponsorXL
-                    href="https://www.edgesource.com"
-                    title="Edgesource"
-                    thumbnail={edgesourceImg}
-                />
-            </SimpleGrid>
+            <Grid gap={6} templateColumns={["repeat(1, 1fr)", "repeat(1, 1fr)", "repeat(3, 1fr)"]}>
+                <GridItem colSpan={1}>
+                    <SponsorXL
+                        href="https://www.bishopireton.org"
+                        title="Bishop Ireton High School"
+                        thumbnail="images/sponsors/bishopireton.png"
+                    />
+                </GridItem>
+                <GridItem colSpan={2}>
+                    <SponsorXL
+                        href="https://www.edgesource.com"
+                        title="Edgesource"
+                        thumbnail={edgesourceImg}
+                    />
+                </GridItem>
+            </Grid>
 
             <Divider my={6} borderColor="gold" borderWidth="2px" />
 
