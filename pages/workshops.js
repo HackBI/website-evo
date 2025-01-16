@@ -30,7 +30,7 @@ const Workshops = () => {
                     Workshop Schedule
                 </Heading>
 
-                <Box padding={4}>
+                <Box padding={4} overflowX={{base: "auto", lg: "unset"}}>
                     <Center>
                         <Table size="sm" variant="striped">
                             <Thead>
