@@ -1,16 +1,66 @@
 import {
     Container,
+    Box,
+    Center,
     Heading,
-    SimpleGrid
+    SimpleGrid,
+    Table,
+    Thead,
+    Tbody,
+    Tr,
+    Th,
+    Td,
 } from '@chakra-ui/react'
 import Layout from "../components/layouts/article"
 import AnimatedBox from '../components/animated-box'
 import { WorkshopGridItem } from '../components/grid-item'
 
 const Workshops = () => {
+    const items = [
+        { id: 1, time: "1100-1200", room103: "Python", room105: "Java", room107: "HTML", room111: "", room113: "Keynote", engineering: "" },
+        { id: 2, time: "1300-1400", room103: "Rust", room105: "MLH Mini-Event", room107: "Cybersecurity", room111: "", room113: "AI Innovation Speaker", engineering: "Circuits" },
+        { id: 3, time: "1415-1515", room103: "Video Editing", room105: "Unity", room107: "Java Graphics", room111: "AI/ML", room113: "Quiet Hacking", engineering: "Robots" },
+        { id: 4, time: "1700-1800", room103: "JMU Overview", room105: "Hardware", room107: "Finch Robots", room111: "How To Run A Hackathon", room113: "Photo Editing", engineering: "" },
+    ]
+
     return (
         <Layout title="Workshops">
             <Container>
+                <Heading as="h3" fontSize={20} mb={4}>
+                    Workshop Schedule
+                </Heading>
+
+                <Box padding={4}>
+                    <Center>
+                        <Table size="sm" variant="striped">
+                            <Thead>
+                                <Tr>
+                                    <Th>Time</Th>
+                                    <Th>Room 103</Th>
+                                    <Th>Room 105</Th>
+                                    <Th>Room 107</Th>
+                                    <Th>Room 111</Th>
+                                    <Th>Room 113</Th>
+                                    <Th>Engineering Room</Th>
+                                </Tr>
+                            </Thead>
+                            <Tbody>
+                                {items.map((item) => (
+                                    <Tr key={item.id}>
+                                        <Td>{item.time}</Td>
+                                        <Td>{item.room103}</Td>
+                                        <Td>{item.room105}</Td>
+                                        <Td>{item.room107}</Td>
+                                        <Td>{item.room111}</Td>
+                                        <Td>{item.room113}</Td>
+                                        <Td>{item.engineering}</Td>
+                                    </Tr>
+                                ))}
+                            </Tbody>
+                        </Table>
+                    </Center>
+                </Box>
+
                 <Heading as="h3" fontSize={20} mb={4}>
                     Workshops
                 </Heading>
