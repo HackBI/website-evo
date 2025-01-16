@@ -87,7 +87,7 @@ const Team = () => {
             bio: "Hello! My name is Emilio Burneo; I'm a junior at Bishop Ireton and am so excited to be on the Hack BI Logistics Team for the second time! I'm a cross country, long-distance track runner, and piano player. I'm a big fan of Chipotle and Imaginal Disk by Magdalena Bay. Here's to another successful hackathon!"
         },
         {
-            src: "images/team/placeholder.jpg",
+            src: "images/team/dallas.jpg",
             name: "Dallas Dsouza",
             role: "Logistics Team",
             bio: "Hello! My name is Dallas, and I am a junior at Bishop Ireton. This is my third time attending HackBI and my second year assisting with one of the workshops. Outside of programming, I am interested in several fields of engineering, staying informed about global events, and biking. I am excited to contribute to HackBI this year through the logistics team and an engineering workshop!"
