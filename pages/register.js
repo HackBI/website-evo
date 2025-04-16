@@ -40,7 +40,7 @@ const Register = () => {
                         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
                     >
                         <Box pb='1'>
-                            <Text as='b' fontSize='xl'>January 18-19, 2025</Text>
+                            <Text as='b' fontSize='xl'>January 17-18, 2026</Text>
                         </Box>
 
                         <Button onClick={onOpen} bg='cardinal'>Rain Date</Button>
@@ -51,7 +51,7 @@ const Register = () => {
                                 <ModalHeader>HackBI Rain Date</ModalHeader>
                                 <ModalCloseButton />
                                 <ModalBody>
-                                    In case of any inclement weather, HackBI will occur on <b>January 25-26, 2025</b>.
+                                    In case of any inclement weather, HackBI will occur on <b>January 24-25, 2026</b>.
                                 </ModalBody>
 
                                 <ModalFooter>

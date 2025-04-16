@@ -150,7 +150,7 @@ const PreRegister = () => {
                                 <ModalHeader>HackBI Rain Date</ModalHeader>
                                 <ModalCloseButton />
                                 <ModalBody>
-                                    In case of any inclement weather, HackBI will occur on <b>January 24-25, 2025</b>.
+                                    In case of any inclement weather, HackBI will occur on <b>January 24-25, 2026</b>.
                                 </ModalBody>
 
                                 <ModalFooter>
