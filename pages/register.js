@@ -5,6 +5,7 @@ import {
 } from "@chakra-ui/react"
 import Layout from "../components/layouts/article"
 import AnimatedBox from "../components/animated-box"
+import Date from "../components/date"
 import StudentRegistration from "../components/student-registration"
 import AdultRegistration from "../components/adult-registration"
 
