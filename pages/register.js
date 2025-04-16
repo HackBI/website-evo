@@ -19,11 +19,11 @@ import {
     useDisclosure,
     useColorModeValue,
 } from "@chakra-ui/react"
-import { SiEventbrite } from "react-icons/si"
 import { FaRegLightbulb } from "react-icons/fa6"
 import NextLink from "next/link"
 import Layout from "../components/layouts/article"
 import AnimatedBox from "../components/animated-box"
+import StudentRegistration from "../components/student-registration"
 
 const Register = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -66,43 +66,7 @@ const Register = () => {
 
                 <AnimatedBox delay={0.15}>
                     <Flex>
-                        <Box p={6} width="29ch" borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}>
-                            <Center>
-                                <Heading as="h3" variant="section-title">Student Registration</Heading>
-                            </Center>
-
-                            <Center>
-                                <Button
-                                    as={NextLink}
-                                    href="https://www.eventbrite.com/e/hackbi-viii-tickets-1008426840827"
-                                    bg='cardinal'
-                                    target="_blank"
-                                    leftIcon={<SiEventbrite />}
-                                >Register</Button>
-                            </Center>
-
-                            <Heading as="h3" variant="section-title">Forms</Heading>
-                            Non-Ireton students must print, fill out, and bring
-                            the forms to the hackathon
-                            <Divider my={6} />
-
-                            <Center>
-                                <Box>
-                                    <Box>
-                                        <Link href="/forms/guest_permission_form.pdf" target="_blank" download="HackBI Guest Permission Form">
-                                            Guest Permission Form
-                                        </Link>
-                                    </Box>
-                                </Box>
-                            </Center>
-                            <Center>
-                                <Box>
-                                    <Link href="/forms/emergency_care_form.pdf" target="_blank" download="HackBI Emergency Care Form">
-                                        Emergency Care Form
-                                    </Link>
-                                </Box>
-                            </Center>
-                        </Box>
+                        <StudentRegistration />
 
                         <Spacer />
 
