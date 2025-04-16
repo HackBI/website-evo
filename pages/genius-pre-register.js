@@ -17,7 +17,7 @@ import Paragraph from "../components/paragraph";
 import CryptoJS from 'crypto-js';
 require('dotenv').config();
 
-const PreRegister = () => {
+const GeniusPreRegister = () => {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
@@ -179,4 +179,4 @@ const PreRegister = () => {
     );
 };
 
-export default PreRegister;
+export default GeniusPreRegister;
