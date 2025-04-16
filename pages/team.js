@@ -11,7 +11,7 @@ const Team = () => {
         {
             src: "images/team/michael.jpg",
             name: "Michael Bobrowski",
-            role: "Co-Director",
+            role: "Co-Director and Chief Engineer",
             bio: "Hi everyone! I am Michael Bobrowski, and I'm thrilled to be your Co-Director for HackBI VIII. I'm a senior at Bishop Ireton and have attended HackBI all four years here, so I'm really looking forward to making this year the best one yet! I started programming in my freshman year, and right now I enjoy working with Rust, Zig, and OCaml, utilizing my skills to make this website and the backend server it runs on. Besides programming, I am also involved in cross country and the swim team at Bishop Ireton. Let's make HackBI VIII Great!"
         },
         {

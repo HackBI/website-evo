@@ -139,7 +139,7 @@ const PreRegister = () => {
                         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
                     >
                         <Box pb='1'>
-                            <Text as='b'>January 18-19, 2025</Text>
+                            <Text as='b'>January 17-18, 2026</Text>
                         </Box>
 
                         <Button onClick={onOpen} colorScheme='cyan'>Rain Date</Button>
@@ -150,7 +150,7 @@ const PreRegister = () => {
                                 <ModalHeader>HackBI Rain Date</ModalHeader>
                                 <ModalCloseButton />
                                 <ModalBody>
-                                    In case of any inclement weather, HackBI will occur on <b>January 25-26, 2025</b>.
+                                    In case of any inclement weather, HackBI will occur on <b>January 24-25, 2025</b>.
                                 </ModalBody>
 
                                 <ModalFooter>
