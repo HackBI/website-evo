@@ -63,10 +63,10 @@ const Team = () => {
             bio: "Hello, my name is Henry Leopold and I am extremely excited to be a volunteer of Hack BI. I am a senior at Bishop Ireton and a part of the workshops team. I have been a participant of Hack BI since my sophomore year and I can't wait to finish my time at BI with this amazing program."
         },
         {
-            src: "images/team/sofia.png",
+            src: "images/team/sofia.jpg",
             name: "Sofia Meller",
             role: "Events Team",
-            bio: "Hey!! My name is Sofia Meller, and I am excited to assist with icebreakers and team formation for this year’s HackBI. Some things I love are dance, hiking, my wiener dog Rosie, kombucha, and of course Mrs. Briody. I’ve been involved with Hack since sophomore year and can’t wait to be apart of this great team for another year!"
+            bio: "Hey!! My name is Sofia Meller, and I am excited to assist with icebreakers and team formation for this year's HackBI. Some things I love are dance, hiking, my wiener dog Rosie, kombucha, and of course Mrs. Briody. I've been involved with Hack since sophomore year and can't wait to be apart of this great team for another year!"
         },
         {
             src: "images/team/placeholder.jpg",
@@ -132,7 +132,7 @@ const Team = () => {
             src: "images/team/alex.jpg",
             name: "Alex Stuart",
             role: "Design Team",
-            bio: "Hi! I’m Alex and I am so happy to be on the Hack BI team this year. I am a senior and part of the Design and Marketing team.  In my limited free time I love to swim, do art, and read. This is my first year doing HackBI and I am so excited for it! I can’t wait to see you all there!"
+            bio: "Hi! I'm Alex and I am so happy to be on the Hack BI team this year. I am a senior and part of the Design and Marketing team.  In my limited free time I love to swim, do art, and read. This is my first year doing HackBI and I am so excited for it! I can’t wait to see you all there!"
         }
     ];
 
