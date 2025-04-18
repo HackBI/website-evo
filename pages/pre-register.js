@@ -56,7 +56,7 @@ const PreRegister = () => {
             if (result.success) {
                 toast({
                     title: "Success!",
-                    description: "Your registration was submitted.",
+                    description: "Your pre-registration has been recorded.",
                     status: "success",
                     duration: 5000,
                     isClosable: true,
