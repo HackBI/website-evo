@@ -36,11 +36,11 @@ const Index = () => {
                                 <Center>
                                     <Button
                                         as={NextLink}
-                                        href="/register"
+                                        href="/pre-register"
                                         rightIcon={<ChevronRightIcon />}
                                         bg='cardinal'
                                         size='lg'
-                                    >Register Now</Button>
+                                    >Pre-Register Now</Button>
                                 </Center>
                             </Box>
                             <Box
