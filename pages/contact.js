@@ -31,12 +31,61 @@ const Contact = () => {
         textarea.style.height = `${textarea.scrollHeight}px`;
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const mailtoLink = `mailto:hackbi@bishopireton.org?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${firstName} ${lastName}\nEmail: ${email}\n\nMessage: ${message}`)}`;
+        if (!firstName || !lastName || !email || !subject || !message) {
+            toast({
+                title: "Missing Fields",
+                description: "Please fill out all fields before submitting.",
+                status: "error",
+                duration: 5000,
+                isClosable: true,
+            });
+            return;
+        }
 
-        window.location.href = mailtoLink;
+        const formData = new FormData();
+        formData.append("access_key", "dd1048b5-3b25-46a5-8f6c-e0af175fd446");
+        formData.append("from_name", `${firstName} ${lastName}`);
+        formData.append("subject", subject);
+        formData.append("email", email);
+        formData.append("message", message);
+
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData,
+            });
+
+            const result = await response.json();
+
+            if (result.success) {
+                toast({
+                    title: "Message Sent!",
+                    description: "We have received your message and will get back to you soon.",
+                    status: "success",
+                    duration: 5000,
+                    isClosable: true,
+                });
+                // Reset form
+                setFirstName('');
+                setLastName('');
+                setEmail('');
+                setSubject('');
+                setMessage('');
+            } else {
+                throw new Error(result.message || "Something went wrong.");
+            }
+        } catch (error) {
+            toast({
+                title: "Submission Failed",
+                description: error.message,
+                status: "error",
+                duration: 5000,
+                isClosable: true,
+            });
+        }
     };
 
     return (
@@ -68,6 +117,7 @@ const Contact = () => {
                                         type="email"
                                         value={email}
                                         onChange={(e) => setEmail(e.target.value)}
+                                        name="email"
                                     />
                                 </FormControl>
                                 <FormControl isRequired>
@@ -76,6 +126,7 @@ const Contact = () => {
                                         type="text"
                                         value={subject}
                                         onChange={(e) => setSubject(e.target.value)}
+                                        name="subject"
                                     />
                                 </FormControl>
                                 <FormControl isRequired>
@@ -86,14 +137,18 @@ const Contact = () => {
                                         placeholder="Enter your message here"
                                         resize="none"
                                         minHeight="150px"
-                                        style={{ overflow: 'hidden', resize: 'none' }}
+                                        style={{ overflow: 'hidden' }}
+                                        name="message"
                                     />
                                 </FormControl>
-                                <Button type="submit" bg="cardinal" width="full">
+                                <Button type="submit" bg="cardinal" color="white" width="full">
                                     Submit
                                 </Button>
                                 <Text fontSize="sm" color="gray.500" align="center">
-                                    You can also email us at <Link href="mailto:hackbi@bishopireton.org">hackbi@bishopireton.org</Link>
+                                    You can also email us at{' '}
+                                    <Link href="mailto:hackbi@bishopireton.org" color="cyan.600">
+                                        hackbi@bishopireton.org
+                                    </Link>
                                 </Text>
                             </VStack>
                         </form>
