@@ -5,6 +5,9 @@ import Banner from '../banner'
 import Footer from '../footer'
 
 const Main = ({ children, router }) => {
+    const noBannerRoutes = ['/hof']
+    const hideBanner = noBannerRoutes.includes(router.asPath)
+
     return (
         <Box as="main" pb={8}>
             <Head>
@@ -16,7 +19,7 @@ const Main = ({ children, router }) => {
             <NavBar path={router.asPath} />
 
             <Container maxW="container.lg" pt={14}>
-                <Banner />
+                {!hideBanner && <Banner />}
 
                 {children}
 

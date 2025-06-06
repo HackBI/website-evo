@@ -14,9 +14,9 @@ const StyledSpecialText = styled.div(({ speed }) => css`
     color: #b5b5b5a4;
     background: linear-gradient(
         120deg,
-        rgba(255, 255, 255, 0) 40%,
+        rgba(176, 32, 16, 1) 40%,
         rgba(255, 255, 255, 0.8) 50%,
-        rgba(255, 255, 255, 0) 60%
+        rgba(176, 32, 16, 1) 60%
     );
     background-size: 200% 100%;
     -webkit-background-clip: text;
@@ -25,10 +25,10 @@ const StyledSpecialText = styled.div(({ speed }) => css`
     animation: ${shine} ${speed}s linear infinite;
 `)
 
-const SpecialText = ({ text, speed }) => {
+const SpecialText = ({ children, speed }) => {
     return (
         <StyledSpecialText speed={speed}>
-            {text}
+            {children}
         </StyledSpecialText>
     )
 }
