@@ -56,9 +56,9 @@ export const WorkshopGridItem = ({
 export const GridItemStyle = () => (
     <Global
         styles={`
-      .grid-item-thumbnail {
-        border-radius: 12px;
-      }
+            .grid-item-thumbnail {
+            border-radius: 12px;
+        }
     `}
     />
 )

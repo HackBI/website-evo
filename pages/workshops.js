@@ -25,12 +25,12 @@ const Workshops = () => {
 
     return (
         <Layout title="Workshops">
-            <Container>
+            <Container maxW="container.lg">
                 <Heading as="h3" fontSize={20} mb={4}>
                     Workshop Schedule
                 </Heading>
 
-                <Box padding={4} overflowX={{base: "auto", lg: "unset"}}>
+                <Box padding={5} overflowX={{base: "auto", lg: "unset"}}>
                     <Center>
                         <Table size="sm" variant="striped">
                             <Thead>
