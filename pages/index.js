@@ -98,17 +98,6 @@ const Index = () => {
                             </Link>
                         </ListItem>
                         <ListItem>
-                            <Link href="https://x.com/hackbiofficial" target="_blank">
-                                <Button
-                                    variant="ghost"
-                                    colorScheme="teal"
-                                    leftIcon={<PiXLogo />}
-                                >
-                                    @hackbiofficial
-                                </Button>
-                            </Link>
-                        </ListItem>
-                        <ListItem>
                             <Link href="https://instagram.com/hackbiofficial" target="_blank">
                                 <Button
                                     variant="ghost"
