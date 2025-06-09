@@ -12,7 +12,6 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { IoLogoGithub, IoLogoInstagram } from 'react-icons/io5'
-import { PiXLogo } from 'react-icons/pi'
 import NextLink from 'next/link'
 import Layout from '../components/layouts/article'
 import { AboutCardText, AboutCardImage } from '../components/about-card'
