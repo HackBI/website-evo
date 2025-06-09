@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef } from 'react'
 
 class Pixel {
     constructor(canvas, context, x, y, color, speed, delay) {
