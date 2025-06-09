@@ -1,13 +1,13 @@
 import {
     Container,
     Box,
-    Center,
-    Heading,
+    Flex,
     Text,
 } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import GoldenBanner from '../components/golden-banner'
 import TiltedCard from '../components/workshop-card'
+import PixelCard from '../components/pixel-card'
 
 const HOF = () => {
     return (
@@ -36,6 +36,13 @@ const HOF = () => {
                     }
                 />
             </Container>
+            <PixelCard variant="red">
+                <Flex w="100%" h="100%" position="absolute" justifyContent="center" alignItems="center">
+                    <Text fontSize="3rem" userSelect="none" fontWeight={900} mixBlendMode="difference" color="#a6a6a6" zIndex="500">
+                        hover me.
+                    </Text>
+                </Flex>
+            </PixelCard>
         </Layout>
     )
 }
