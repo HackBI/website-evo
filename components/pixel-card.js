@@ -132,7 +132,6 @@ export default function PixelCard({
     speed,
     colors,
     noFocus,
-    className = "",
     children
 }) {
     const containerRef = useRef(null)
@@ -283,7 +282,7 @@ export default function PixelCard({
 
             <div
                 ref={containerRef}
-                className={`pixel-card ${className}`}
+                className={`pixel-card`}
 
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
