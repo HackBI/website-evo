@@ -20,6 +20,7 @@ import AnimatedBox from '../components/animated-box'
 import Paragraph from '../components/paragraph'
 import SponsorBlock from '../components/sponsor-block'
 import Date from '../components/date'
+import Magnet from '../components/magnet'
 
 const Index = () => {
     return (
@@ -34,13 +35,17 @@ const Index = () => {
                         <Box mb={4}>
                             <Box flexGrow={1}>
                                 <Center>
-                                    <Button
-                                        as={NextLink}
-                                        href="/pre-register"
-                                        rightIcon={<ChevronRightIcon />}
-                                        bg='cardinal'
-                                        size='lg'
-                                    >Pre-Register Now</Button>
+                                    <Magnet>
+                                        <Button
+                                            as={NextLink}
+                                            href="/pre-register"
+                                            rightIcon={<ChevronRightIcon />}
+                                            bg='cardinal'
+                                            size='lg'
+                                        >
+                                            Pre-Register Now
+                                        </Button>
+                                    </Magnet>
                                 </Center>
                             </Box>
                             <Box

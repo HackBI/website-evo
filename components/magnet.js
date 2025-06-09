@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from 'react'
 
 const Magnet = ({ children }) => {
-    const MAGNET_STRENGTH = 10
-    const PADDING = 10
+    const MAGNET_STRENGTH = 5
+    const PADDING = 50
 
     const [isActive, setIsActive] = useState(false)
     const [position, setPosition] = useState({ x: 0, y: 0 })
@@ -12,14 +12,14 @@ const Magnet = ({ children }) => {
         const handleMouseMove = (e) => {
             if (!magnetRef.current) return;
 
-            const { left, top, width, height } = magnetRef.current.getBoundingClientReact()
+            const { left, top, width, height } = magnetRef.current.getBoundingClientRect()
             const centerX = left + width / 2
             const centerY = top + height / 2
 
             const distX = Math.abs(centerX - e.clientX)
-            const distY = Math/abs(centerY - e.clientY)
+            const distY = Math.abs(centerY - e.clientY)
 
-            if (distX < width / 2 + padding && distY < height / 2 + padding) {
+            if (distX < width / 2 + PADDING && distY < height / 2 + PADDING) {
                 setIsActive(true)
 
                 const offsetX = (e.clientX - centerX) / MAGNET_STRENGTH
