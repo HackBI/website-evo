@@ -118,10 +118,10 @@ const VARIANTS = {
         noFocus: false
     },
     red: {
-        activeColor: "#fecdd3",
+        activeColor: "#f75757",
         gap: 6,
         speed: 80,
-        colors: "#fecdd3,#fda4af,#e11d48",
+        colors: "#f75757,#ff2424,#b02010",
         noFocus: true
     }
 }
