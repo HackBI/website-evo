@@ -11,7 +11,7 @@ import {
     Link,
     useToast,
 } from '@chakra-ui/react';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Layout from '../components/layouts/article';
 import Date from '../components/date';
 import AnimatedBox from "../components/animated-box";
