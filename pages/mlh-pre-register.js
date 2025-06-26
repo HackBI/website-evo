@@ -8,6 +8,7 @@ import {
     Select,
     Heading,
     VStack,
+    Link,
     useToast,
 } from '@chakra-ui/react';
 import React, { useState } from 'react';
@@ -27,6 +28,10 @@ const MLHPreRegister = () => {
     const [gradeLevel, setGradeLevel] = useState('');
     const [study, setStudy] = useState('');
     const [country, setCountry] = useState('');
+
+    const [mlh1, setMLH1] = useState('');
+    const [mlh2, setMLH2] = useState('');
+    const [mlh3, setMLH3] = useState('');
 
     const toast = useToast();
 
@@ -56,7 +61,11 @@ const MLHPreRegister = () => {
         formData.append("school", school)
         formData.append("grade_level", gradeLevel);
         formData.append("study", study);
-        formData.append("country", country)
+        formData.append("country", country);
+
+        formData.append("MLH_COC", mlh1);
+        formData.append("MLH_Terms_Privacy", mlh2);
+        formData.append("MLH_Messages", mlh3);
 
         try {
             const res = await fetch("https://api.web3forms.com/submit", {
@@ -83,6 +92,10 @@ const MLHPreRegister = () => {
                 setSchool('');
                 setGradeLevel('');
                 setStudy('');
+                
+                setMLH1('');
+                setMLH2('');
+                setMLH3('');
             } else {
                 throw new Error(result.message || "Something went wrong.");
             }
@@ -187,8 +200,8 @@ const MLHPreRegister = () => {
                                         onChange={(e) => setStudy(e.target.value)}
                                         name="study"
                                     >
-                                        <option value="MiddleSchool">Middle School</option>
-                                        <option value="HighSchool">High School</option>
+                                        <option value="Middle School">Middle School</option>
+                                        <option value="High School">High School</option>
                                     </Select>
                                 </FormControl>
                                 <CountrySelector
@@ -196,6 +209,49 @@ const MLHPreRegister = () => {
                                     onChange={(e) => setCountry(e.target.value)}
                                     name="country"
                                 />
+
+                                <FormControl isRequired>
+                                    <FormLabel>
+                                        <Link href="https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md" target="_blank">MLH Code of Conduct</Link>
+                                    </FormLabel>
+                                    <Select
+                                        placeholder="Select"
+                                        value={mlh1}
+                                        onChange={(e) => setMLH1(e.target.value)}
+                                        name="MLH_COC"
+                                    >
+                                        <option value="Agree">I Agree</option>
+                                        <option value="Disagree">I Disagree</option>
+                                    </Select>
+                                </FormControl>
+                                <FormControl isRequired>
+                                    <FormLabel>
+                                        <Link href="https://github.com/MLH/mlh-policies/blob/main/contest-terms.md" target="_blank">MLH Terms</Link>
+                                        {' '}and{' '}
+                                        <Link href="https://github.com/MLH/mlh-policies/blob/main/privacy-policy.md" target="_blank">MLH Privacy Policy</Link>
+                                    </FormLabel>
+                                    <Select
+                                        placeholder="Select"
+                                        value={mlh2}
+                                        onChange={(e) => setMLH2(e.target.value)}
+                                        name="MLH_Terms_Privacy"
+                                    >
+                                        <option value="Agree">I Agree</option>
+                                        <option value="Disagree">I Disagree</option>
+                                    </Select>
+                                </FormControl>
+                                <FormControl isRequired>
+                                    <FormLabel>I authorize MLH to send me occasional messages</FormLabel>
+                                    <Select
+                                        placeholder="Select"
+                                        value={mlh3}
+                                        onChange={(e) => setMLH3(e.target.value)}
+                                        name="MLH_Messages"
+                                    >
+                                        <option value="Agree">I Agree</option>
+                                        <option value="Disagree">I Disagree</option>
+                                    </Select>
+                                </FormControl>
                                 <Button type="submit" colorScheme="cyan" width="full">
                                     Submit
                                 </Button>
