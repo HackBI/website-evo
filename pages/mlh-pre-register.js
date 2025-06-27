@@ -165,8 +165,8 @@ const MLHPreRegister = () => {
                                         name="email"
                                     />
                                 </FormControl>
-                                <FormControl>
-                                    <FormLabel optionalIndicator>Phone Number</FormLabel>
+                                <FormControl isRequired>
+                                    <FormLabel>Phone Number</FormLabel>
                                     <Input
                                         type="tel"
                                         value={phone}
