@@ -212,7 +212,7 @@ const MLHPreRegister = () => {
 
                                 <FormControl isRequired>
                                     <FormLabel>
-                                        I have read and agree to the{' '}<Link href="https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md" target="_blank">MLH Code of Conduct</Link>
+                                        I have read and agree to the <Link href="https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md" target="_blank">MLH Code of Conduct</Link>
                                     </FormLabel>
                                     <Select
                                         placeholder="Select"
@@ -221,13 +221,13 @@ const MLHPreRegister = () => {
                                         name="MLH_COC"
                                     >
                                         <option value="Agree">I Agree</option>
-                                        <option value="Disagree">I Disagree</option>
                                     </Select>
                                 </FormControl>
                                 <FormControl isRequired>
                                     <FormLabel>
                                         I authorize you to share my application/registration information with Major League Hacking for event administration, ranking, 
-                                        and MLH administration in-line with the MLH Privacy Policy. I further agree to the terms of both the MLH Contest Terms and Conditions
+                                        and MLH administration in-line with the <Link href="https://github.com/MLH/mlh-policies/blob/main/privacy-policy.md" target="_blank">MLH Privacy Policy</Link>.
+                                        I further agree to the terms of both the <Link href="https://github.com/MLH/mlh-policies/blob/main/contest-terms.md" target="_blank">MLH Contest Terms and Conditions</Link>
                                     </FormLabel>
                                     <Select
                                         placeholder="Select"
@@ -236,7 +236,6 @@ const MLHPreRegister = () => {
                                         name="MLH_Terms_Privacy"
                                     >
                                         <option value="Agree">I Agree</option>
-                                        <option value="Disagree">I Disagree</option>
                                     </Select>
                                 </FormControl>
                                 <FormControl isRequired>

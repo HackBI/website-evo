@@ -14,13 +14,14 @@ const CountrySelector = ({ value, onChange, name, }) => {
                 onChange={onChange}
                 name={name}
             >
-                <option value="UnitedStates">United States</option>
+                <option value="United States">United States</option>
+                <option value="Vatican City">Vatican City</option>
                 <option value="Afghanistan">Afghanistan</option>
                 <option value="Albania">Albania</option>
                 <option value="Algeria">Algeria</option>
                 <option value="Andorra">Andorra</option>
                 <option value="Angola">Angola</option>
-                <option value="Antigua&Deps">Antigua & Deps</option>
+                <option value="Antigua and Deps">Antigua & Deps</option>
                 <option value="Argentina">Argentina</option>
                 <option value="Armenia">Armenia</option>
                 <option value="Australia">Australia</option>
@@ -37,7 +38,7 @@ const CountrySelector = ({ value, onChange, name, }) => {
                 <option value="Bermuda">Bermuda</option>
                 <option value="Bhutan">Bhutan</option>
                 <option value="Bolivia">Bolivia</option>
-                <option value="Bosnia and Herzegovina">Bosnia & Herzegovina</option>
+                <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
                 <option value="Botswana">Botswana</option>
                 <option value="Brazil">Brazil</option>
                 <option value="Brunei">Brunei</option>
@@ -65,7 +66,7 @@ const CountrySelector = ({ value, onChange, name, }) => {
                 <option value="Djibouti">Djibouti</option>
                 <option value="Dominica">Dominica</option>
                 <option value="Dominican Republic">Dominican Republic</option>
-                <option value="EastTimor">East Timor</option>
+                <option value="East Timor">East Timor</option>
                 <option value="Ecuador">Ecuador</option>
                 <option value="Egypt">Egypt</option>
                 <option value="El Salvador">El Salvador</option>
@@ -205,7 +206,6 @@ const CountrySelector = ({ value, onChange, name, }) => {
                 <option value="Uruguay">Uruguay</option>
                 <option value="Uzbekistan">Uzbekistan</option>
                 <option value="Vanuatu">Vanuatu</option>
-                <option value="Vatican City">Vatican City</option>
                 <option value="Venezuela">Venezuela</option>
                 <option value="Vietnam">Vietnam</option>
                 <option value="Yemen">Yemen</option>
