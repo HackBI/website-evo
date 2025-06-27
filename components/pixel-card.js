@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react'
+import { useColorModeValue } from '@chakra-ui/react'
 
 class Pixel {
     constructor(canvas, context, x, y, color, speed, delay) {
@@ -224,6 +225,7 @@ export default function PixelCard({
         if (e.currentTarget.contains(e.relatedTarget)) return;
         handleAnimation("appear")
     };
+
     const onBlur = (e) => {
         if (e.currentTarget.contains(e.relatedTarget)) return;
         handleAnimation("disappear")
@@ -268,7 +270,7 @@ export default function PixelCard({
                     position: absolute;
                     inset: 0;
                     margin: auto;
-                    background: radial-gradient(circle, #09090b, transparent 85%);
+                    background: radial-gradient(circle,rgba(173, 0, 0, 0.7), transparent 85%);
                     opacity: 0;
                     transition: opacity 800ms cubic-bezier(0.5, 1, 0.89, 1);
                 }
@@ -282,7 +284,7 @@ export default function PixelCard({
 
             <div
                 ref={containerRef}
-                className={`pixel-card`}
+                className="pixel-card"
 
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
