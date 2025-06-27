@@ -212,7 +212,7 @@ const MLHPreRegister = () => {
 
                                 <FormControl isRequired>
                                     <FormLabel>
-                                        <Link href="https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md" target="_blank">MLH Code of Conduct</Link>
+                                        I have read and agree to the{' '}<Link href="https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md" target="_blank">MLH Code of Conduct</Link>
                                     </FormLabel>
                                     <Select
                                         placeholder="Select"
@@ -226,9 +226,8 @@ const MLHPreRegister = () => {
                                 </FormControl>
                                 <FormControl isRequired>
                                     <FormLabel>
-                                        <Link href="https://github.com/MLH/mlh-policies/blob/main/contest-terms.md" target="_blank">MLH Terms</Link>
-                                        {' '}and{' '}
-                                        <Link href="https://github.com/MLH/mlh-policies/blob/main/privacy-policy.md" target="_blank">MLH Privacy Policy</Link>
+                                        I authorize you to share my application/registration information with Major League Hacking for event administration, ranking, 
+                                        and MLH administration in-line with the MLH Privacy Policy. I further agree to the terms of both the MLH Contest Terms and Conditions
                                     </FormLabel>
                                     <Select
                                         placeholder="Select"
@@ -241,7 +240,7 @@ const MLHPreRegister = () => {
                                     </Select>
                                 </FormControl>
                                 <FormControl isRequired>
-                                    <FormLabel>I authorize MLH to send me occasional messages</FormLabel>
+                                    <FormLabel>I authorize MLH to send me occasional emails about relevant events, career opportunities, and community announcements</FormLabel>
                                     <Select
                                         placeholder="Select"
                                         value={mlh3}
