@@ -60,7 +60,7 @@ const Team = () => {
             src: "images/team/dallas.jpg",
             name: "Dallas Dsouza",
             role: "Admin Team",
-            bio: "Hey! My name is Dallas, and I am a senior at Bishop Ireton. This is my fourth time attending HackBI, my first year on the admin team, and my third year assisting with at least one workshop. Outside of programming, I am one of two Chemistry Head Teaching Assistants for Mr. Kerns, interested in biomedical and electrical engineering, and fascinated in political events. I am excited to contribute to HackBI IX and look forward to the successes that will happen this year!"
+            bio: "Hey, folks! My name is Dallas, and I am currently a senior at Bishop Ireton. I have been attending HackBI since my freshman year, and this is my first year on the admin team. It is also my third year leading at least one workshop. Outside of school and HackBI, I am the President of Bishop Ireton's Science National Honor Society and am one of two Head Chemistry Teaching and Lab Assistants - among other roles. I am passionate about chemistry, physics, and electrical engineering, and I also have a strong interest in political and national affairs. I am excited to contribute to HackBI in my final year at Bishop Ireton and cannot wait to see all the amazing things that come out of this year's hackathon!"
         },
         {
             src: "images/team/nate.jpg",
@@ -174,7 +174,7 @@ const Team = () => {
             src: "images/team/james.jpg",
             name: "James Feeley",
             role: "Middle School Team",
-            bio: "Hi! I am James Feeley, and I am excited for my second Hackbi. I am a sophomore at Bishop ireton. It's an honor to be a part of this year's Hackbi. In my free time, I like to run on the cross-country team, play with my dog, or go on long bike rides. I look Forward to seeing you at Hackbi."
+            bio: "Hi! I am James Feeley, and I am excited for my second HackBI. I am a sophomore at Bishop ireton. It's an honor to be a part of this year's HackBI. In my free time, I like to run on the cross-country team, play with my dog, or go on long bike rides. I look forward to seeing you at HackBI."
         }
     ];
 
