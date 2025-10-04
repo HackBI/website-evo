@@ -20,7 +20,7 @@ const StudentRegistration = () => {
             <Center>
                 <Button
                     as={NextLink}
-                    href="https://www.eventbrite.com/e/hackbi-viii-tickets-1008426840827"
+                    href="https://www.eventbrite.com/e/hackbi-ix-tickets-1435832576889"
                     bg='cardinal'
                     target="_blank"
                     leftIcon={<SiEventbrite />}
