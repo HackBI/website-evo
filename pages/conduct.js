@@ -24,7 +24,7 @@ const Conduct = () => {
                     <br />
 
                     <Paragraph>
-                        By attending Bishop Ireton's HackBI VIII event, you must follow and abide 
+                        By attending Bishop Ireton's HackBI IX event, you must follow and abide 
                         by the stated rules and regulations. Failure to do so will result in 
                         potential removal from the event.
                     </Paragraph>

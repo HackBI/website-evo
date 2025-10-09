@@ -23,7 +23,7 @@ const AdultRegistration = () => {
             <Text fontSize="xs">
                 Supervise and monitor students
             </Text>
-            <Link href="https://www.signupgenius.com/go/60B054DAAAA2CA6FF2-52416101-hack" target="_blank">
+            <Link href="https://www.signupgenius.com/go/60B054DAAAA2CA6FF2-59112269-hack#/" target="_blank">
                 <Button
                     variant="ghost"
                     color={useColorModeValue('#f0a822', '#f0a822')}
@@ -37,7 +37,7 @@ const AdultRegistration = () => {
             <Text fontSize="xs">
                 Offer technical advice and guidance to hackers
             </Text>
-            <Link href="https://www.signupgenius.com/go/60B054DAAAA2CA6FF2-52416199-hack" target="_blank">
+            <Link href="https://www.signupgenius.com/go/60B054DAAAA2CA6FF2-59112364-hack#/" target="_blank">
                 <Button
                     variant="ghost"
                     color={useColorModeValue('#f0a822', '#f0a822')}
@@ -51,7 +51,7 @@ const AdultRegistration = () => {
             <Text fontSize="xs">
                 Attend student presentations and choose the best projects to receive prizes
             </Text>
-            <Link href="https://www.signupgenius.com/go/60B054DAAAA2CA6FF2-52416142-hack" target="_blank">
+            <Link href="https://www.signupgenius.com/go/60B054DAAAA2CA6FF2-59112268-hack#/" target="_blank">
                 <Button
                     variant="ghost"
                     color={useColorModeValue('#f0a822', '#f0a822')}

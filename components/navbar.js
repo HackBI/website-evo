@@ -72,8 +72,8 @@ const Navbar = props => {
                     flexGrow={1}
                     mt={{ base: 4, md: 0 }}
                 >
-                    <LinkItem href="/mlh-pre-register" path={path}>
-                        Pre-Register
+                    <LinkItem href="/register" path={path}>
+                        Register
                     </LinkItem>
                     <LinkItem href="/faq" path={path}>
                         FAQ
