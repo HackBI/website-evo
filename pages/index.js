@@ -35,12 +35,12 @@ const Index = () => {
                                 <Center>
                                     <Button
                                         as={NextLink}
-                                        href="/mlh-pre-register"
+                                        href="/-register"
                                         rightIcon={<ChevronRightIcon />}
                                         bg='cardinal'
                                         size='lg'
                                     >
-                                        Pre-Register Now
+                                        Register Now
                                     </Button>
                                 </Center>
                             </Box>
@@ -63,7 +63,7 @@ const Index = () => {
                             been run by the students of Bishop Ireton High School for 8 consecutive years.
                             At HackBI, you will learn new things and collaborate with others to make your
                             ideas come to life. Check out our{' '}
-                            <Link as={NextLink} href="/faq" scroll={false}>
+                            <Link as={NextLink} href="/FAQ" scroll={false}>
                                 faq
                             </Link>
                             {' '}if you have any questions.
