@@ -35,7 +35,7 @@ const Index = () => {
                                 <Center>
                                     <Button
                                         as={NextLink}
-                                        href="/-register"
+                                        href="/register"
                                         rightIcon={<ChevronRightIcon />}
                                         bg='cardinal'
                                         size='lg'
