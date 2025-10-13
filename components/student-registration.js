@@ -28,7 +28,7 @@ const StudentRegistration = () => {
             </Center>
 
             <Center>
-                <Heading as="h3" variant="section-title">6th and 7th Grade Student Registration</Heading>
+                <Heading as="h3" variant="section-title">6th and 7th Grade Student Waitlist</Heading>
             </Center>
 
             <Center>
