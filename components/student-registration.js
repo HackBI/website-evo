@@ -14,7 +14,7 @@ const StudentRegistration = () => {
     return (
         <Box p={6} width="29ch" borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}>
             <Center>
-                <Heading as="h3" variant="section-title">Student Registration</Heading>
+                <Heading as="h3" variant="section-title">8th Grade and High School Student Registration</Heading>
             </Center>
 
             <Center>
@@ -24,6 +24,19 @@ const StudentRegistration = () => {
                     bg='cardinal'
                     target="_blank"
                     leftIcon={<SiEventbrite />}
+                >Register</Button>
+            </Center>
+
+            <Center>
+                <Heading as="h3" variant="section-title">6th and 7th Grade Student Registration</Heading>
+            </Center>
+
+            <Center>
+                <Button
+                    as={NextLink}
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSeO7pBmJVPgsEmmXLYN-Yk2XFCRJE7Oz5uNTV8v0yEVxSEsqw/viewform"
+                    bg='cardinal'
+                    target="_blank"
                 >Register</Button>
             </Center>
 
