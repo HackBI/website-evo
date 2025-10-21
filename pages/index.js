@@ -60,7 +60,7 @@ const Index = () => {
                     <Box pb={2}>
                         <Paragraph>
                             HackBI is an annual hackathon for middle and high school students that has
-                            been run by the students of Bishop Ireton High School for 8 consecutive years.
+                            been run by the students of Bishop Ireton High School for 9 consecutive years.
                             At HackBI, you will learn new things and collaborate with others to make your
                             ideas come to life. Check out our{' '}
                             <Link as={NextLink} href="/FAQ" scroll={false}>

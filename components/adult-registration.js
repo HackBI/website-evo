@@ -49,8 +49,10 @@ const AdultRegistration = () => {
 
             <Heading as="h3" variant="section-title">Judges</Heading>
             <Text fontSize="xs">
-                Attend student presentations and choose the best projects to receive prizes
+                Attend student presentations and choose the best projects to receive prizes - SIGN UP COMING SOON!
             </Text>
+
+            {/* USE THIS FOR LATER....
             <Link href="https://www.signupgenius.com/go/60B054DAAAA2CA6FF2-59112268-hack#/" target="_blank">
                 <Button
                     variant="ghost"
@@ -60,6 +62,8 @@ const AdultRegistration = () => {
                     Sign Up!
                 </Button>
             </Link>
+            */}
+
         </Box>
     )
 }
