@@ -14,11 +14,18 @@ import Layout from '../components/layouts/article';
 import Date from '../components/date';
 import AnimatedBox from "../components/animated-box";
 import Paragraph from "../components/paragraph";
-import { Navigate } from 'react-router-dom';
+import useEffect from 'react';
+import useRouter from 'next/router';
 
 const PreRegister = () => {
 
-    return <Navigate to="/register" />;
+    const router = useRouter();
+
+    useEffect(() => {
+        router.push('/register');
+    }, [router]);
+
+    return null;
 
     /* USE AGAIN FOR PREREGISTER!!!!!!!!!
     const [firstName, setFirstName] = useState('');
