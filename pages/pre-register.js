@@ -14,8 +14,13 @@ import Layout from '../components/layouts/article';
 import Date from '../components/date';
 import AnimatedBox from "../components/animated-box";
 import Paragraph from "../components/paragraph";
+import { Navigate } from 'react-router-dom';
 
 const PreRegister = () => {
+
+    return <Navigate to="/register" />;
+
+    /* USE AGAIN FOR PREREGISTER!!!!!!!!!
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
@@ -145,6 +150,10 @@ const PreRegister = () => {
             </Container>
         </Layout>
     );
+    */
+
+
+
 };
 
 export default PreRegister;
