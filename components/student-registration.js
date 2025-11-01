@@ -14,7 +14,7 @@ const StudentRegistration = () => {
     return (
         <Box p={6} width="29ch" borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}>
             <Center>
-                <Heading as="h3" variant="section-title">8th Grade and High School Student Registration</Heading>
+                <Heading as="h3" variant="section-title">High School and 8th Grade Student Registration</Heading>
             </Center>
 
             <Center>
