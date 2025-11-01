@@ -14,7 +14,22 @@ import Layout from '../components/layouts/article';
 import Date from '../components/date';
 import AnimatedBox from "../components/animated-box";
 import Paragraph from "../components/paragraph";
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 
+
+export default function PreRegister() {
+    const router = useRouter()
+
+    useEffect(() => {
+        router.replace('/register')
+    }, [router])
+
+    return null;
+}
+
+
+/**   UNCOMMENT THIS CODE FOR PREREGISTER
 const PreRegister = () => {
 
     const [firstName, setFirstName] = useState('');
@@ -150,3 +165,4 @@ const PreRegister = () => {
 };
 
 export default PreRegister;
+*/
