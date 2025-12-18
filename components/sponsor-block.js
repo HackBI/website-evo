@@ -54,9 +54,19 @@ const SponsorBlock = () => {
                     thumbnail={mlhImg}
                 />
                 <Sponsor
+                    href="https://www.cathyhackl.com"
+                    title="Cathy Hackl"
+                    thumbnail={hacklImg}
+                />
+                <Sponsor
                     href="https://iac.vt.edu/"
                     title="Virginia Tech Institute of Advanced Computing"
                     thumbnail={vtImg}
+                />
+                <Sponsor
+                    href="https://www.potbelly.com"
+                    title="Potbelly's"
+                    thumbnail="images/sponsors/potbelly.png"
                 />
                 <Sponsor
                     href="https://www.hallow.com"
@@ -67,16 +77,6 @@ const SponsorBlock = () => {
                     href="https://www.dominos.com"
                     title="Dominos Pizza"
                     thumbnail="images/sponsors/dominos.png"
-                />
-                <Sponsor
-                    href="https://www.cathyhackl.com"
-                    title="Cathy Hackl"
-                    thumbnail={hacklImg}
-                />
-                <Sponsor
-                    href="https://www.potbelly.com"
-                    title="Potbelly's"
-                    thumbnail="images/sponsors/potbelly.png"
                 />
                 <Sponsor
                     href="https://www.standoutstickers.com"
@@ -93,11 +93,12 @@ const SponsorBlock = () => {
                     title="Reston Shirt"
                     thumbnail={restonImg}
                 />
+                {/** 
                 <Sponsor
                     href="https://www.paradigmcorp.com"
                     title="Paradigm"
                     thumbnail="images/sponsors/paradigm.png"
-                />
+                />*/}
             </SimpleGrid>
         </Box>
     )
