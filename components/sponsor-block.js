@@ -43,7 +43,7 @@ const SponsorBlock = () => {
             </Box>
 
             <SimpleGrid columns={[2, 3, 4]} gap={6}>
-                <SponsorXL
+                <Sponsor
                         href="https://www.bishopireton.org"
                         title="Bishop Ireton High School"
                         thumbnail="images/sponsors/bishopireton.png"
