@@ -15,6 +15,7 @@ import Layout from "../components/layouts/article"
 import AnimatedBox from '../components/animated-box'
 import { WorkshopGridItem } from '../components/grid-item'
 
+// SCHEDULE NEEDS A FIX
 const Workshops = () => {
     const items = [
         { id: 1, time: "1100-1200", room103: "Python", room105: "Java", room107: "HTML", room111: "", room113: "Keynote", engineering: "" },
@@ -62,9 +63,10 @@ const Workshops = () => {
                 </Box>
 
                 <Heading as="h3" fontSize={20} mb={4}>
-                    Workshops
+                    Workshop Pages Coming Soon
                 </Heading>
 
+                {/** USE THIS
                 <SimpleGrid columns={[1, 2, 3]} gap={6}>
                     <AnimatedBox delay={0.1}>
                         <WorkshopGridItem
@@ -165,6 +167,7 @@ const Workshops = () => {
                         />
                     </AnimatedBox>
                 </SimpleGrid>
+                */}
             </Container>
         </Layout>
     )

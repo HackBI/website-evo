@@ -17,10 +17,10 @@ import Paragraph from '../components/paragraph'
 const SponsorBlock = () => {
     const fourImprintImg = `images/sponsors/4imprint${useColorModeValue('-light', '-dark')}.png`
     const mlhImg = `images/sponsors/mlh${useColorModeValue('-light', '-dark')}.png`
-    const photographImg = `images/sponsors/photograph${useColorModeValue('-light', '-dark')}.png`
-    const mohawkImg = `images/sponsors/mohawk${useColorModeValue('-light', '-dark')}.png`
-    const cuaImg = `images/sponsors/cua${useColorModeValue('-light', '-dark')}.png`
-    const edgesourceImg = `images/sponsors/es${useColorModeValue('-light', '-dark')}.png`
+    const vtImg = `images/sponsors/vt${useColorModeValue('-light', '-dark')}.png`
+    const hacklImg = `images/sponsors/hackl${useColorModeValue('-light', '-dark')}.png`
+    const hallowImg = `images/sponsors/hallow${useColorModeValue('-light', '-dark')}.png`
+    const restonImg = `images/sponsors/reston${useColorModeValue('-light', '-dark')}.png`
 
     return (
         <Box>
@@ -48,13 +48,6 @@ const SponsorBlock = () => {
                         thumbnail="images/sponsors/bishopireton.png"
                     />
                 </GridItem>
-                <GridItem colSpan={2}>
-                    <SponsorXL
-                        href="https://www.edgesource.com"
-                        title="Edgesource"
-                        thumbnail={edgesourceImg}
-                    />
-                </GridItem>
             </Grid>
 
             <Divider my={6} borderColor="gold" borderWidth="2px" />
@@ -62,7 +55,7 @@ const SponsorBlock = () => {
             <Box my={2}>
                 <Center>
                     <Paragraph>
-                        Thanks to our <strong>2025</strong> Sponsors:
+                        Thanks to our <strong>2026</strong> Sponsors:
                     </Paragraph>
                 </Center>
             </Box>
@@ -74,14 +67,14 @@ const SponsorBlock = () => {
                     thumbnail={mlhImg}
                 />
                 <Sponsor
-                    href="https://www.catholic.edu"
-                    title="Catholic University of America"
-                    thumbnail={cuaImg}
+                    href="https://iac.vt.edu/"
+                    title="Virginia Tech Institute of Advanced Computing"
+                    thumbnail={vtImg}
                 />
                 <Sponsor
-                    href="https://www.4imprint.com"
-                    title="4Imprint"
-                    thumbnail={fourImprintImg}
+                    href="https://www.hallow.com"
+                    title="Hallow"
+                    thumbnail={hallowImg}
                 />
                 <Sponsor
                     href="https://www.dominos.com"
@@ -89,24 +82,9 @@ const SponsorBlock = () => {
                     thumbnail="images/sponsors/dominos.png"
                 />
                 <Sponsor
-                    href="https://www.mohawkgames.com"
-                    title="Mohawk Games"
-                    thumbnail={mohawkImg}
-                />
-                <Sponsor
-                    href="https://www.standoutstickers.com"
-                    title="Stand Out Stickers"
-                    thumbnail="images/sponsors/standout_stickers.png"
-                />
-                <Sponsor
-                    href="https://www.jmu.edu"
-                    title="James Madison University"
-                    thumbnail="images/sponsors/jmu.png"
-                />
-                <Sponsor
-                    href="https://gen.xyz"
-                    title="XYZ"
-                    thumbnail="images/sponsors/xyz.png"
+                    href="https://www.cathyhackl.com"
+                    title="Cathy Hackl"
+                    thumbnail={hacklImg}
                 />
                 <Sponsor
                     href="https://www.potbelly.com"
@@ -114,14 +92,24 @@ const SponsorBlock = () => {
                     thumbnail="images/sponsors/potbelly.png"
                 />
                 <Sponsor
-                    href="https://www.sarahpetersonphoto.com"
-                    title="Sarah Peterson Photography"
-                    thumbnail={photographImg}
+                    href="https://www.standoutstickers.com"
+                    title="Stand Out Stickers"
+                    thumbnail="images/sponsors/standout_stickers.png"
                 />
                 <Sponsor
-                    href="https://vt.edu"
-                    title="Virginia Tech"
-                    thumbnail="images/sponsors/vt.png"
+                    href="https://www.4imprint.com"
+                    title="4Imprint"
+                    thumbnail={fourImprintImg}
+                />
+                <Sponsor
+                    href="https://www.restonshirt.com"
+                    title="Reston Shirt"
+                    thumbnail={restonImg}
+                />
+                <Sponsor
+                    href="https://www.paradigmcorp.com"
+                    title="Paradigm"
+                    thumbnail="images/sponsors/paradigm.png"
                 />
             </SimpleGrid>
         </Box>
