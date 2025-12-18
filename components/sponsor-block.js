@@ -32,24 +32,6 @@ const SponsorBlock = () => {
                 </Link>
             </Box>
 
-            <Box my={2}>
-                <Center>
-                    <Paragraph>
-                        A special thanks to our <strong>Platinum</strong> Sponsors:
-                    </Paragraph>
-                </Center>
-            </Box>
-
-            <Grid gap={6} templateColumns={["repeat(1, 1fr)", "repeat(1, 1fr)", "repeat(3, 1fr)"]}>
-                <GridItem colSpan={1}>
-                    <SponsorXL
-                        href="https://www.bishopireton.org"
-                        title="Bishop Ireton High School"
-                        thumbnail="images/sponsors/bishopireton.png"
-                    />
-                </GridItem>
-            </Grid>
-
             <Divider my={6} borderColor="gold" borderWidth="2px" />
 
             <Box my={2}>
@@ -61,6 +43,11 @@ const SponsorBlock = () => {
             </Box>
 
             <SimpleGrid columns={[2, 3, 4]} gap={6}>
+                <SponsorXL
+                        href="https://www.bishopireton.org"
+                        title="Bishop Ireton High School"
+                        thumbnail="images/sponsors/bishopireton.png"
+                    />
                 <Sponsor
                     href="https://www.mlh.io"
                     title="MLH"
