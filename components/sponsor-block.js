@@ -110,7 +110,7 @@ const SponsorBlock = () => {
                     href="https://www.paradigmcorp.com"
                     title="Paradigm"
                     thumbnail="images/sponsors/paradigm.png"
-                />*
+                />
             </SimpleGrid>
         </Box>
     )
