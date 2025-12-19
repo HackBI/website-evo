@@ -33,8 +33,8 @@ export const SponsorXL = ({ href, title, thumbnail }) => (
             <Center>
                 <Image
                     src={thumbnail}
-                    width="200"
-                    height="200"
+                    width="350"
+                    height="150"
                     alt={title}
                     className="sponsor-thumbnail"
                     placeholder="blur"

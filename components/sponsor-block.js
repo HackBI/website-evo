@@ -21,6 +21,7 @@ const SponsorBlock = () => {
     const hacklImg = `images/sponsors/hackl${useColorModeValue('-light', '-dark')}.png`
     const hallowImg = `images/sponsors/hallow${useColorModeValue('-light', '-dark')}.png`
     const restonImg = `images/sponsors/reston${useColorModeValue('-light', '-dark')}.png`
+    const iretonImg = `images/sponsors/bishopireton${useColorModeValue('-light', '-dark')}.png`
 
     return (
         <Box>
@@ -42,12 +43,19 @@ const SponsorBlock = () => {
                 </Center>
             </Box>
 
-            <SimpleGrid columns={[2, 3, 4]} gap={6}>
-                <Sponsor
+            <Box>
+                <Center>
+                   <SponsorXL
                         href="https://www.bishopireton.org"
                         title="Bishop Ireton High School"
-                        thumbnail="images/sponsors/bishopireton.png"
-                    />
+                        thumbnail={iretonImg}
+                    /> 
+                </Center>
+            </Box>
+
+            <Divider my={6} borderColor="white" borderWidth="2px" />
+
+            <SimpleGrid columns={[2, 3, 2]} gap={6}>
                 <Sponsor
                     href="https://www.mlh.io"
                     title="MLH"
@@ -58,6 +66,11 @@ const SponsorBlock = () => {
                     title="Cathy Hackl"
                     thumbnail={hacklImg}
                 />
+            </SimpleGrid>
+
+            <Box padding="20px"/>
+
+            <SimpleGrid columns = {[2, 3, 4]} gap={6}>
                 <Sponsor
                     href="https://iac.vt.edu/"
                     title="Virginia Tech Institute of Advanced Computing"
@@ -93,12 +106,11 @@ const SponsorBlock = () => {
                     title="Reston Shirt"
                     thumbnail={restonImg}
                 />
-                {/** 
                 <Sponsor
                     href="https://www.paradigmcorp.com"
                     title="Paradigm"
                     thumbnail="images/sponsors/paradigm.png"
-                />*/}
+                />*
             </SimpleGrid>
         </Box>
     )
