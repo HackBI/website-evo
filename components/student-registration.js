@@ -14,7 +14,7 @@ const StudentRegistration = () => {
     return (
         <Box p={6} width="29ch" borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}>
             <Center>
-                <Heading as="h3" variant="section-title">High School and 8th Grade Student Registration</Heading>
+                <Heading as="h3" variant="section-title">High School and Middle School Registration</Heading>
             </Center>
 
             <Center>
@@ -27,6 +27,7 @@ const StudentRegistration = () => {
                 >Register</Button>
             </Center>
 
+            {/**
             <Center>
                 <Heading as="h3" variant="section-title">6th and 7th Grade Student Waitlist</Heading>
             </Center>
@@ -39,6 +40,7 @@ const StudentRegistration = () => {
                     target="_blank"
                 >Register</Button>
             </Center>
+            */}
 
             <Heading as="h3" variant="section-title">Forms</Heading>
             Non-Ireton students must print, fill out, and bring
