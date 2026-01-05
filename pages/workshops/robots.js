@@ -11,7 +11,7 @@ const EngineeringRobots = () => {
         <Layout title="Engineering Robots">
             <Container>
                 <Title>
-                    Engineering Robots <Badge>Henry Leopold | Sariel Angelo Cruz</Badge>
+                    Engineering Robots <Badge>Nate DeGrandi | Matthias Borges</Badge>
                 </Title>
 
                 <Paragraph>

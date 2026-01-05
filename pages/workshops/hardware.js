@@ -11,7 +11,7 @@ const ComputerHardware = () => {
         <Layout title="Computer Hardware">
             <Container>
                 <Title>
-                    Computer Hardware <Badge>Rory McGuire | Nick Danshaw</Badge>
+                    Computer Hardware <Badge>Nate DeGrandi | Matthias Borges</Badge>
                 </Title>
 
                 <Paragraph>

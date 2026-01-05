@@ -18,10 +18,10 @@ import { WorkshopGridItem } from '../components/grid-item'
 // SCHEDULE NEEDS A FIX
 const Workshops = () => {
     const items = [
-        { id: 1, time: "1100-1200", room103: "Python", room105: "Java", room107: "HTML", room111: "", room113: "Keynote", engineering: "" },
-        { id: 2, time: "1300-1400", room103: "Rust", room105: "MLH Mini-Event", room107: "Cybersecurity", room111: "", room113: "AI Innovation Speaker", engineering: "Circuits" },
-        { id: 3, time: "1415-1515", room103: "Video Editing", room105: "Unity", room107: "Java Graphics", room111: "AI/ML", room113: "Quiet Hacking", engineering: "Robots" },
-        { id: 4, time: "1700-1800", room103: "JMU Overview", room105: "Hardware", room107: "Finch Robots", room111: "How To Run A Hackathon", room113: "Photo Editing", engineering: "" },
+        { id: 1, time: "1100-1200", room103: "", room105: "", room107: "", room111: "Creating a Dev Environment", room113: "Keynote", engineering: "" },
+        { id: 2, time: "1300-1400", room103: "", room105: "", room107: "Unity", room111: "Python", room113: "", engineering: "Circuits" },
+        { id: 3, time: "1415-1515", room103: "", room105: "", room107: "Java Graphics", room111: "HTML/CSS", room113: "AI/ML", engineering: "Robots" },
+        { id: 4, time: "1700-1800", room103: "", room105: "", room107: "JavaScript", room111: "Java", room113: "MLH Mini-Session", engineering: "Finch Robots" },
     ]
 
     return (
@@ -68,12 +68,6 @@ const Workshops = () => {
 
                 {/** USE THIS
                 <SimpleGrid columns={[1, 2, 3]} gap={6}>
-                    <AnimatedBox delay={0.1}>
-                        <WorkshopGridItem
-                            title="Rust"
-                            id="rust"
-                            src="images/workshops/rust.png"
-                        />
                     </AnimatedBox>
                     <AnimatedBox delay={0.1}>
                         <WorkshopGridItem
@@ -112,23 +106,9 @@ const Workshops = () => {
                     </AnimatedBox>
                     <AnimatedBox delay={0.2}>
                         <WorkshopGridItem
-                            title="Cybersecurity"
-                            id="cybersec"
-                            src="images/workshops/cybersec.png"
-                        />
-                    </AnimatedBox>
-                    <AnimatedBox delay={0.2}>
-                        <WorkshopGridItem
                             title="Java Graphics"
                             id="graphics"
                             src="images/workshops/graphics.png"
-                        />
-                    </AnimatedBox>
-                    <AnimatedBox delay={0.2}>
-                        <WorkshopGridItem
-                            title="Video Editing"
-                            id="video"
-                            src="images/workshops/video.png"
                         />
                     </AnimatedBox>
                     <AnimatedBox delay={0.25}>

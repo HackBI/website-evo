@@ -13,7 +13,7 @@ const Java = () => {
         <Layout title="Java">
             <Container>
                 <Title>
-                    Java <Badge>Daniel Santillian | Ethan Miller</Badge>
+                    Java <Badge>Patrick Christmas | Joshua Rough</Badge>
                 </Title>
 
                 <Paragraph>

@@ -13,7 +13,7 @@ const AIML = () => {
         <Layout title="AI/ML">
             <Container>
                 <Title>
-                    AI/ML <Badge>Michael Bobrowski | Anthony Amedome</Badge>
+                    AI/ML <Badge>Daniel Santillan | Patrick Christmas</Badge>
                 </Title>
 
                 <Paragraph>

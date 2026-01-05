@@ -13,7 +13,7 @@ const Unity = () => {
         <Layout title="Unity">
             <Container>
                 <Title>
-                    Unity <Badge>Patrick Kessmeier| David De Costa</Badge>
+                    Unity <Badge>Timothy Stoll | Colin McHugh</Badge>
                 </Title>
 
                 <Paragraph>

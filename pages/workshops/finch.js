@@ -13,7 +13,7 @@ const FinchRobots = () => {
         <Layout title="Finch Robots">
             <Container>
                 <Title>
-                    Finch Robots <Badge>Nora Hixson | Ethan Miller</Badge>
+                    Finch Robots <Badge>Patrick Costello | Elliot Freitag</Badge>
                 </Title>
 
                 <Paragraph>

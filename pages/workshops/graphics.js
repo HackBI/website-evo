@@ -13,7 +13,7 @@ const JavaSwingGraphics = () => {
         <Layout title="Java Swing Graphics">
             <Container>
                 <Title>
-                    Java Swing Graphics <Badge>Rory McGuire | Sariel Angelo Cruz</Badge>
+                    Java Swing Graphics <Badge>Patrick Costello | Dallas Dsouza</Badge>
                 </Title>
 
                 <Paragraph>
