@@ -22,6 +22,7 @@ const Workshops = () => {
         { id: 2, time: "1300-1400", room103: "", room105: "", room107: "Unity", room111: "Python", room113: "", engineering: "Circuits" },
         { id: 3, time: "1415-1515", room103: "", room105: "", room107: "Java Graphics", room111: "HTML/CSS", room113: "AI/ML", engineering: "Robots" },
         { id: 4, time: "1700-1800", room103: "", room105: "", room107: "JavaScript", room111: "Java", room113: "MLH Mini-Session", engineering: "Finch Robots" },
+        { id: 5, time: "1900-2000", room103: "MLH GitHub/Copilot", room105: "", room107: "AWS", room111: "", room113: "", engineering: "Hardware"}
     ]
 
     return (
@@ -66,9 +67,7 @@ const Workshops = () => {
                     Workshop Pages Coming Soon
                 </Heading>
 
-                {/** USE THIS
                 <SimpleGrid columns={[1, 2, 3]} gap={6}>
-                    </AnimatedBox>
                     <AnimatedBox delay={0.1}>
                         <WorkshopGridItem
                             title="Java"
@@ -145,9 +144,21 @@ const Workshops = () => {
                             id="robots"
                             src="images/workshops/robots.png"
                         />
+                    </AnimatedBox><AnimatedBox delay={0.3}>
+                        <WorkshopGridItem
+                            title="Dev Environment"
+                            id="devenvironment"
+                            src="images/workshops/devenv.png"
+                        />
+                    </AnimatedBox>
+                    <AnimatedBox delay={0.3}>
+                        <WorkshopGridItem
+                            title="JavaScript"
+                            id="javacsript"
+                            src="images/workshops/javascript.png"
+                        />
                     </AnimatedBox>
                 </SimpleGrid>
-                */}
             </Container>
         </Layout>
     )
