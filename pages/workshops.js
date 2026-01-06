@@ -63,10 +63,8 @@ const Workshops = () => {
                     </Center>
                 </Box>
 
-                <Heading as="h3" fontSize={20} mb={4}>
-                    Workshop Pages Coming Soon
-                </Heading>
-
+                <br/>
+                
                 <SimpleGrid columns={[1, 2, 3]} gap={6}>
                     <AnimatedBox delay={0.1}>
                         <WorkshopGridItem
