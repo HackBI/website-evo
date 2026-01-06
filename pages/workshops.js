@@ -112,13 +112,6 @@ const Workshops = () => {
                     </AnimatedBox>
                     <AnimatedBox delay={0.25}>
                         <WorkshopGridItem
-                            title="Image Editing"
-                            id="image"
-                            src="images/workshops/image.png"
-                        />
-                    </AnimatedBox>
-                    <AnimatedBox delay={0.25}>
-                        <WorkshopGridItem
                             title="Finch Robots"
                             id="finch"
                             src="images/workshops/finch.png"
@@ -154,8 +147,15 @@ const Workshops = () => {
                     <AnimatedBox delay={0.3}>
                         <WorkshopGridItem
                             title="JavaScript"
-                            id="javacsript"
+                            id="javascript"
                             src="images/workshops/javascript.png"
+                        />
+                    </AnimatedBox>
+                    <AnimatedBox delay={0.3}>
+                        <WorkshopGridItem
+                            title="AWS"
+                            id="aws"
+                            src="images/workshops/aws.png"
                         />
                     </AnimatedBox>
                 </SimpleGrid>
