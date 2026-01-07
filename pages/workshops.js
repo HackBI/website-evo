@@ -23,6 +23,7 @@ const Workshops = () => {
         { id: 3, time: "1415-1515", room103: "", room105: "", room107: "Java Graphics", room111: "HTML/CSS", room113: "AI/ML", engineering: "Robots" },
         { id: 4, time: "1700-1800", room103: "", room105: "", room107: "JavaScript", room111: "Java", room113: "MLH Mini-Session", engineering: "Finch Robots" },
         { id: 5, time: "1900-2000", room103: "", room105: "", room107: "AWS", room111: "", room113: "MLH GitHub/Copilot", engineering: "Hardware"}
+        { id: 6, time: "2000-0100", room103: "", room105: "", room107: "", room111: "", room113: "Quiet Hacking", engineering: ""}
     ]
 
     return (
