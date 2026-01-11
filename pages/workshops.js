@@ -15,15 +15,16 @@ import Layout from "../components/layouts/article"
 import AnimatedBox from '../components/animated-box'
 import { WorkshopGridItem } from '../components/grid-item'
 
-// SCHEDULE NEEDS A FIX
+// First commented line as reference in case you need to reuse 103 and 105
 const Workshops = () => {
     const items = [
-        { id: 1, time: "1100-1200", room103: "", room105: "", room107: "", room111: "Creating a Dev Environment", room113: "Keynote", engineering: "" },
-        { id: 2, time: "1300-1400", room103: "", room105: "", room107: "Unity", room111: "Python", room113: "", engineering: "Circuits" },
-        { id: 3, time: "1415-1515", room103: "", room105: "", room107: "Java Graphics", room111: "HTML/CSS", room113: "AI/ML", engineering: "Robots" },
-        { id: 4, time: "1700-1800", room103: "", room105: "", room107: "JavaScript", room111: "Java", room113: "MLH Mini-Session", engineering: "Finch Robots" },
-        { id: 5, time: "1900-2000", room103: "", room105: "", room107: "AWS", room111: "", room113: "MLH GitHub/Copilot", engineering: "Hardware"},
-        { id: 6, time: "2000-0100", room103: "", room105: "", room107: "", room111: "", room113: "Quiet Hacking", engineering: ""}
+        // { id: 1, time: "1100-1200", room103: "", room105: "", room107: "", room111: "Creating a Dev Environment", room113: "Keynote", engineering: "" },
+        { id: 1, time: "1100-1200", room103: "", room105: "", room107: "", room111: "Creating a Dev Environment", room113: "", engineering: "", cafe: "VT Advanced Computing - Future Workforce (Dr. Jim Egenrieder)"},
+        { id: 2, time: "1300-1400", room103: "", room105: "", room107: "Unity", room111: "Python", room113: "", engineering: "Circuits", cafe: "MLH Hardware Table Open"},
+        { id: 3, time: "1415-1515", room103: "", room105: "", room107: "Java Graphics", room111: "HTML/CSS", room113: "AI/ML", engineering: "Robots", cafe: "MLH Hardware Table Open"},
+        { id: 4, time: "1700-1800", room103: "", room105: "", room107: "JavaScript", room111: "Java", room113: "MLH Mini-Session", engineering: "Finch Robots", cafe: "Mentors and Team Hacking"},
+        { id: 5, time: "1900-2000", room103: "", room105: "", room107: "AWS", room111: "", room113: "MLH GitHub/Copilot", engineering: "Hardware", cafe: "Mentors and Team Hacking"},
+        { id: 6, time: "2000-0100", room103: "", room105: "", room107: "", room111: "", room113: "Quiet Hacking", engineering: "", cafe: "Mentors and Team Hacking"}
     ]
 
     return (
@@ -39,24 +40,22 @@ const Workshops = () => {
                             <Thead>
                                 <Tr>
                                     <Th>Time</Th>
-                                    <Th>Room 103</Th>
-                                    <Th>Room 105</Th>
                                     <Th>Room 107</Th>
                                     <Th>Room 111</Th>
                                     <Th>Room 113</Th>
                                     <Th>Engineering Room</Th>
+                                    <Th>Murphy Hall (Cafe)</Th>
                                 </Tr>
                             </Thead>
                             <Tbody>
                                 {items.map((item) => (
                                     <Tr key={item.id}>
                                         <Td>{item.time}</Td>
-                                        <Td>{item.room103}</Td>
-                                        <Td>{item.room105}</Td>
                                         <Td>{item.room107}</Td>
                                         <Td>{item.room111}</Td>
                                         <Td>{item.room113}</Td>
                                         <Td>{item.engineering}</Td>
+                                        <Td>{item.cafe}</Td>
                                     </Tr>
                                 ))}
                             </Tbody>

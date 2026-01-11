@@ -18,6 +18,10 @@ const StudentRegistration = () => {
             </Center>
 
             <Center>
+                <Heading as="h3" variant="section-title">REGISTRATION IS DUE SUNDAY, JANUARY 11, AT 11:59 PM</Heading>
+            </Center>
+
+            <Center>
                 <Button
                     as={NextLink}
                     href="https://www.eventbrite.com/e/hackbi-ix-tickets-1435832576889"

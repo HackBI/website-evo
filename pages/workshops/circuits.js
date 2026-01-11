@@ -11,7 +11,7 @@ const EngineeringCircuits = () => {
         <Layout title="Engineering Circuits">
             <Container>
                 <Title>
-                    Engineering Circuits <Badge>Daniel Santillian | Dallas Dsouza</Badge>
+                    Engineering Circuits <Badge>Daniel Santillan | Dallas Dsouza</Badge>
                 </Title>
 
                 <Paragraph>

@@ -40,7 +40,7 @@ const Index = () => {
                                         bg='cardinal'
                                         size='lg'
                                     >
-                                        Register Now
+                                        Register Now - Deadline End of Day Sunday!
                                     </Button>
                                 </Center>
                             </Box>
