@@ -35,12 +35,12 @@ const Index = () => {
                                 <Center>
                                     <Button
                                         as={NextLink}
-                                        href="/register"
+                                        href="/" // Make /register
                                         rightIcon={<ChevronRightIcon />}
                                         bg='cardinal'
                                         size='lg'
                                     >
-                                        Register Now - Deadline End of Day Sunday!
+                                        Registration Closed
                                     </Button>
                                 </Center>
                             </Box>
