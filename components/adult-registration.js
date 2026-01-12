@@ -49,7 +49,7 @@ const AdultRegistration = () => {
 
             <Heading as="h3" variant="section-title">Judges</Heading>
             <Text fontSize="xs">
-                Attend student presentations and choose the best projects to receive prizes - SIGN UP COMING SOON!
+                Attend student presentations and choose the best projects to receive prizes - Make a form on the contact page for more information.
             </Text>
 
             {/* USE THIS FOR LATER....
