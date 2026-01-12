@@ -22,8 +22,8 @@ const Workshops = () => {
         { id: 1, time: "1100-1200", room103: "", room105: "", room107: "", room111: "Creating a Dev Environment", room113: "", engineering: "", cafe: "VT Advanced Computing - Future Workforce (Dr. Jim Egenrieder)"},
         { id: 2, time: "1300-1400", room103: "", room105: "", room107: "Unity", room111: "Python", room113: "", engineering: "Circuits", cafe: "MLH Hardware Table Open"},
         { id: 3, time: "1415-1515", room103: "", room105: "", room107: "Java Graphics", room111: "HTML/CSS", room113: "AI/ML", engineering: "Robots", cafe: "MLH Hardware Table Open"},
-        { id: 4, time: "1700-1800", room103: "", room105: "", room107: "JavaScript", room111: "Java", room113: "MLH Mini-Session", engineering: "Finch Robots", cafe: "Mentors and Team Hacking"},
-        { id: 5, time: "1900-2000", room103: "", room105: "", room107: "AWS", room111: "", room113: "MLH GitHub/Copilot", engineering: "Hardware", cafe: "Mentors and Team Hacking"},
+        { id: 4, time: "1700-1800", room103: "", room105: "", room107: "JavaScript", room111: "Java", room113: "Finch Robots", engineering: "", cafe: "Mentors and Team Hacking"},
+        { id: 5, time: "1900-2000", room103: "", room105: "", room107: "AWS", room111: "Hardware", room113: "MLH GitHub/Copilot", engineering: "", cafe: "Mentors and Team Hacking"},
         { id: 6, time: "2000-0100", room103: "", room105: "", room107: "", room111: "", room113: "Quiet Hacking", engineering: "", cafe: "Mentors and Team Hacking"}
     ]
 
