@@ -19,7 +19,7 @@ import { WorkshopGridItem } from '../components/grid-item'
 const Workshops = () => {
     const items = [
         // { id: 1, time: "1100-1200", room103: "", room105: "", room107: "", room111: "Creating a Dev Environment", room113: "Keynote", engineering: "" },
-        { id: 1, time: "1100-1200", room103: "", room105: "", room107: "", room111: "Creating a Dev Environment", room113: "", engineering: "", cafe: "VT Advanced Computing - Future Workforce (Dr. Jim Egenrieder)"},
+        { id: 1, time: "1100-1200", room103: "", room105: "", room107: "", room111: "", room113: "", engineering: "", cafe: "VT Advanced Computing - Future Workforce (Dr. Jim Egenrieder)"},
         { id: 2, time: "1300-1400", room103: "", room105: "", room107: "Unity", room111: "Python", room113: "", engineering: "Circuits", cafe: "MLH Hardware Table Open"},
         { id: 3, time: "1415-1515", room103: "", room105: "", room107: "Java Graphics", room111: "HTML", room113: "AI/ML", engineering: "Robots", cafe: "MLH Hardware Table Open"},
         { id: 4, time: "1700-1800", room103: "", room105: "", room107: "JavaScript", room111: "Java", room113: "Finch Robots", engineering: "", cafe: "Mentors and Team Hacking"},
@@ -134,12 +134,6 @@ const Workshops = () => {
                             title="Engineering - Robots"
                             id="robots"
                             src="images/workshops/robots.png"
-                        />
-                    </AnimatedBox><AnimatedBox delay={0.3}>
-                        <WorkshopGridItem
-                            title="Dev Environment"
-                            id="devenvironment"
-                            src="images/workshops/devenv.png"
                         />
                     </AnimatedBox>
                     <AnimatedBox delay={0.3}>
