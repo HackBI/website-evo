@@ -10,10 +10,10 @@ import Paragraph from '../../components/paragraph';
 
 const HTML = () => {
     return (
-        <Layout title="WebDev - HTML/CSS">
+        <Layout title="WebDev - HTML">
             <Container>
                 <Title>
-                    WebDev - HTML/CSS <Badge>Virginia Cheatham | Ian Hixson</Badge>
+                    WebDev - HTML <Badge>Virginia Cheatham | Ian Hixson</Badge>
                 </Title>
 
                 <Paragraph>
