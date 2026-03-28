@@ -2,6 +2,7 @@ import Layout from '../components/layouts/main'
 import Font from '../components/font'
 import { AnimatePresence } from 'framer-motion'
 import Chakra from '../components/chakra'
+import '../styles/globals.css'
 
 if (typeof window !== 'undefined') {
   window.history.scrollRestoration = 'manual'

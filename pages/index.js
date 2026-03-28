@@ -5,10 +5,17 @@ import {
     VStack,
     HStack,
     Button,
-    Heading,
     Link,
     List,
     ListItem,
+    Heading,
+    SimpleGrid,
+    Table,
+    Thead,
+    Tbody,
+    Tr,
+    Th,
+    Td,
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { IoLogoGithub, IoLogoInstagram } from 'react-icons/io5'
@@ -19,11 +26,18 @@ import AnimatedBox from '../components/animated-box'
 import Paragraph from '../components/paragraph'
 import SponsorBlock from '../components/sponsor-block'
 import Date from '../components/date'
+import { WorkshopGridItem } from '../components/grid-item'
+import FAQ from '../components/faq'
 
 const Index = () => {
     return (
         <Layout>
             <Container maxW="container.lg">
+                <Heading as="h3" variant="title">
+                    Hack BI IX has officially concluded. Stay tuned for Hack BI X in January 2027!
+                </Heading>
+                {/*
+
                 <Container>
                     <AnimatedBox delay={0.1}>
                         <Date date={"January 17-18, 2026"} raindate={"January 24-25, 2026"} />
@@ -53,13 +67,14 @@ const Index = () => {
                             </Box>
                         </Box>
                     </AnimatedBox>
-                </Container>
+                </Container> 
+                */}
 
                 <AnimatedBox delay={0.2}>
-                    <Heading as="h3" variant="section-title">About</Heading>
+                    <Heading as="h3" variant="section-title">What is Hack BI?</Heading>
                     <Box pb={2}>
                         <Paragraph>
-                            HackBI is an annual hackathon for middle and high school students that has
+                            Hack BI is an annual hackathon for middle and high school students that has
                             been run by the students of Bishop Ireton High School for 9 consecutive years.
                             At HackBI, you will learn new things and collaborate with others to make your
                             ideas come to life. Check out our{' '}
@@ -70,21 +85,33 @@ const Index = () => {
                         </Paragraph>
                     </Box>
 
-                    <VStack>
-                        <HStack>
+                <VStack>
+                    <HStack>
+                        <a href="#learn">
                             <AboutCardText text="Learn" src="images/about/learn.jpg" />
-                            <AboutCardText text="Unite" src="images/about/collaborate.jpg" />
-                        </HStack>
+                        </a>
 
-                        <HStack>
+                        <a href="#unite">
+                            <AboutCardText text="Unite" src="images/about/collaborate.jpg" />
+                        </a>
+                    </HStack>
+
+                    <HStack>
+                        <a href="#pitch">
                             <AboutCardImage text="Pitch" src="images/about/pitch.jpg" />
+                        </a>
+
+                        <a href="#celebrate">
                             <AboutCardImage text="Celebrate" src="images/about/celebrate.jpg" />
-                        </HStack>
-                    </VStack>
+                        </a>
+                    </HStack>
+                </VStack>
                 </AnimatedBox>
 
+                <FAQ />
+
                 <AnimatedBox delay={0.25}>
-                    <Heading as="h3" variant="section-title">On the web</Heading>
+                    <Heading as="h3" variant="section-title">Stay Connected with Hack BI</Heading>
 
                     <List>
                         <ListItem>
@@ -121,3 +148,4 @@ const Index = () => {
 }
 
 export default Index
+

@@ -25,7 +25,7 @@ const SponsorBlock = () => {
 
     return (
         <Box>
-            <Heading as="h3" variant="section-title">Sponsors</Heading>
+            <Heading as="h3" variant="section-title">Thank You To Our Sponsors</Heading>
             <Box textAlign="center">
                 Interested in being a sponsor?{' '}
                 <Link as={NextLink} href="/contact">

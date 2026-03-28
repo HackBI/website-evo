@@ -10,14 +10,17 @@ import {
     AccordionIcon,
     useColorModeValue,
 } from '@chakra-ui/react'
-import Layout from "../components/layouts/article"
+import Layout from "./layouts/article"
 
 const FAQ = () => {
     const bgColor = useColorModeValue('gray.100', 'gray.700')
     const headingColor = useColorModeValue('#b02010', '#b02010')
 
     return (
-        <Layout title="FAQ">
+         <Box id="faq" mt={12} scrollMarginTop="100px">
+            <Heading as="h3" variant="section-title">
+                FAQ
+            </Heading>
             <Container maxW="container.md" py={8}>
                 <Accordion allowToggle>
                     <AccordionItem border="none">
@@ -154,7 +157,7 @@ const FAQ = () => {
                     </AccordionItem>
                 </Accordion>
             </Container>
-        </Layout>
+        </Box>
     )
 }
 

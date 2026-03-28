@@ -72,10 +72,10 @@ const Navbar = props => {
                     flexGrow={1}
                     mt={{ base: 4, md: 0 }}
                 >
-                    <LinkItem href="/register" path={path}>
+                  {/*  <LinkItem href="/register" path={path}>
                         Register
-                    </LinkItem>
-                    <LinkItem href="/faq" path={path}>
+                    </LinkItem>*/}
+                    <LinkItem href="#faq" path={path}>
                         FAQ
                     </LinkItem>
                     <LinkItem href="/workshops" path={path}>
