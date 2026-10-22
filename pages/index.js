@@ -34,7 +34,7 @@ const Index = () => {
         <Layout>
             <Container maxW="container.lg">
                 <Heading as="h3" variant="title">
-                    Hack BI IX has officially concluded. Stay tuned for Hack BI X in January 2027!
+                    Stay tuned for registration for Hack BI X in January 2027!
                 </Heading>
                 {/*
 
@@ -75,7 +75,7 @@ const Index = () => {
                     <Box pb={2}>
                         <Paragraph>
                             Hack BI is an annual hackathon for middle and high school students that has
-                            been run by the students of Bishop Ireton High School for 9 consecutive years.
+                            been run by the students of Bishop Ireton High School for 10 consecutive years.
                             At HackBI, you will learn new things and collaborate with others to make your
                             ideas come to life. Check out our{' '}
                             <Link as={NextLink} href="/faq" scroll={false}>
