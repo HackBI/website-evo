@@ -33,14 +33,16 @@ const Index = () => {
     return (
         <Layout>
             <Container maxW="container.lg">
-                <Heading as="h3" variant="title">
-                    Stay tuned for registration for Hack BI X in January 2027!
+                <Center>
+                <Heading as="h3" variant="title" mb={2} >
+                    Registration is now open!
                 </Heading>
-                {/*
+                </Center>
+                {
 
                 <Container>
                     <AnimatedBox delay={0.1}>
-                        <Date date={"January 17-18, 2026"} raindate={"January 24-25, 2026"} />
+                        <Date date={"January 16-17, 2027"} raindate={"January 23-24, 2027"} />
                     </AnimatedBox>
 
                     <AnimatedBox delay={0.15}>
@@ -49,12 +51,14 @@ const Index = () => {
                                 <Center>
                                     <Button
                                         as={NextLink}
-                                        href="/" // Make /register
+                                        href="https://www.eventbrite.com/e/hackbi-x-tickets-1999722381474?dsrp_sid=2602b90e-82a8-436d-88db-b7469d621041&aff=ebdssbdestsearch" // Make /register
+                                        target="_blank"
+                                        rel = "noopener noreferrer"
                                         rightIcon={<ChevronRightIcon />}
                                         bg='cardinal'
                                         size='lg'
                                     >
-                                        Registration Closed
+                                        Register Here!
                                     </Button>
                                 </Center>
                             </Box>
@@ -68,7 +72,7 @@ const Index = () => {
                         </Box>
                     </AnimatedBox>
                 </Container> 
-                */}
+                }
 
                 <AnimatedBox delay={0.2}>
                     <Heading as="h3" variant="section-title">What is Hack BI?</Heading>

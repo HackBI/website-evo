@@ -12,7 +12,7 @@ const Main = ({ children, router }) => {
         <Box as="main" pb={8}>
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+                <link rel="icon" href="/favicon.png?v=b8df4dc0a1a2" type="image/png" />
                 <title>HackBI</title>
             </Head>
 

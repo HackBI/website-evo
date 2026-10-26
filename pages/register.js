@@ -14,7 +14,7 @@ const Register = () => {
         <Layout title="Register">
             <Container maxW="container.md">
                 <AnimatedBox delay={0.1}>
-                    <Date date={"January 17-18, 2026"} raindate={"January 24-25, 2026"} />
+                    <Date date={"January 16-17, 2027"} raindate={"January 23-24, 2027"} />
                 </AnimatedBox>
 
                 <AnimatedBox delay={0.15}>
