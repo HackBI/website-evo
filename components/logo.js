@@ -19,7 +19,7 @@ const LogoBox = styled.span`
 `
 
 const Logo = () => {
-    const logoImg = `/images/icon.jpeg`
+    const logoImg = `/favicon.png`
 
     return (
         <Link href="/">
