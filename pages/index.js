@@ -8,14 +8,7 @@ import {
     Link,
     List,
     ListItem,
-    Heading,
-    SimpleGrid,
-    Table,
-    Thead,
-    Tbody,
-    Tr,
-    Th,
-    Td,
+    Heading
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { IoLogoGithub, IoLogoInstagram } from 'react-icons/io5'
@@ -26,7 +19,6 @@ import AnimatedBox from '../components/animated-box'
 import Paragraph from '../components/paragraph'
 import SponsorBlock from '../components/sponsor-block'
 import Date from '../components/date'
-import { WorkshopGridItem } from '../components/grid-item'
 import FAQ from '../components/faq'
 
 const Index = () => {
@@ -34,15 +26,17 @@ const Index = () => {
         <Layout>
             <Container maxW="container.lg">
                 <Center>
-                <Heading as="h3" variant="title" mb={2} >
-                    Registration is now open!
-                </Heading>
+                    <Heading as="h3" variant="title" mb={2}>
+                        Registration is now open!
+                    </Heading>
                 </Center>
-                {
 
                 <Container>
                     <AnimatedBox delay={0.1}>
-                        <Date date={"January 16-17, 2027"} raindate={"January 23-24, 2027"} />
+                        <Date
+                            date="January 16-17, 2027"
+                            raindate="January 23-24, 2027"
+                        />
                     </AnimatedBox>
 
                     <AnimatedBox delay={0.15}>
@@ -51,75 +45,96 @@ const Index = () => {
                                 <Center>
                                     <Button
                                         as={NextLink}
-                                        href="https://www.eventbrite.com/e/hackbi-x-tickets-1999722381474?dsrp_sid=2602b90e-82a8-436d-88db-b7469d621041&aff=ebdssbdestsearch" // Make /register
+                                        href="https://www.eventbrite.com/e/hackbi-x-tickets-1999722381474?dsrp_sid=2602b90e-82a8-436d-88db-b7469d621041&aff=ebdssbdestsearch"
                                         target="_blank"
-                                        rel = "noopener noreferrer"
+                                        rel="noopener noreferrer"
                                         rightIcon={<ChevronRightIcon />}
-                                        bg='cardinal'
-                                        size='lg'
+                                        bg="cardinal"
+                                        size="lg"
                                     >
                                         Register Here!
                                     </Button>
                                 </Center>
                             </Box>
+
                             <Box
                                 flexShrink={0}
                                 mt={{ base: 4, md: 0 }}
                                 ml={{ md: 6 }}
                                 textAlign="center"
-                            >
-                            </Box>
+                            />
                         </Box>
                     </AnimatedBox>
-                </Container> 
-                }
+                </Container>
 
                 <AnimatedBox delay={0.2}>
-                    <Heading as="h3" variant="section-title">What is Hack BI?</Heading>
+                    <Heading as="h3" variant="section-title">
+                        What is Hack BI?
+                    </Heading>
+
                     <Box pb={2}>
                         <Paragraph>
-                            Hack BI is an annual hackathon for middle and high school students that has
-                            been run by the students of Bishop Ireton High School for 10 consecutive years.
-                            At HackBI, you will learn new things and collaborate with others to make your
-                            ideas come to life. Check out our{' '}
-                            <Link as={NextLink} href="/faq" scroll={false}>
+                            Hack BI is an annual hackathon for middle and high
+                            school students that has been run by the students of
+                            Bishop Ireton High School for 10 consecutive years.
+                            At HackBI, you will learn new things and collaborate
+                            with others to make your ideas come to life. Check
+                            out our{' '}
+                            <Link as={NextLink} href="/#faq">
                                 FAQ
                             </Link>
                             {' '}if you have any questions.
                         </Paragraph>
                     </Box>
 
-                <VStack>
-                    <HStack>
-                        <a href="#learn">
-                            <AboutCardText text="Learn" src="images/about/learn.jpg" />
-                        </a>
+                    <VStack>
+                        <HStack>
+                            <a href="#learn">
+                                <AboutCardText
+                                    text="Learn"
+                                    src="images/about/learn.jpg"
+                                />
+                            </a>
 
-                        <a href="#unite">
-                            <AboutCardText text="Unite" src="images/about/collaborate.jpg" />
-                        </a>
-                    </HStack>
+                            <a href="#unite">
+                                <AboutCardText
+                                    text="Unite"
+                                    src="images/about/collaborate.jpg"
+                                />
+                            </a>
+                        </HStack>
 
-                    <HStack>
-                        <a href="#pitch">
-                            <AboutCardImage text="Pitch" src="images/about/pitch.jpg" />
-                        </a>
+                        <HStack>
+                            <a href="#pitch">
+                                <AboutCardImage
+                                    text="Pitch"
+                                    src="images/about/pitch.jpg"
+                                />
+                            </a>
 
-                        <a href="#celebrate">
-                            <AboutCardImage text="Celebrate" src="images/about/celebrate.jpg" />
-                        </a>
-                    </HStack>
-                </VStack>
+                            <a href="#celebrate">
+                                <AboutCardImage
+                                    text="Celebrate"
+                                    src="images/about/celebrate.jpg"
+                                />
+                            </a>
+                        </HStack>
+                    </VStack>
                 </AnimatedBox>
 
                 <FAQ />
 
                 <AnimatedBox delay={0.25}>
-                    <Heading as="h3" variant="section-title">Stay Connected with Hack BI</Heading>
+                    <Heading as="h3" variant="section-title">
+                        Stay Connected with Hack BI
+                    </Heading>
 
                     <List>
                         <ListItem>
-                            <Link href="https://github.com/hackbi" target="_blank">
+                            <Link
+                                href="https://github.com/hackbi"
+                                target="_blank"
+                            >
                                 <Button
                                     variant="ghost"
                                     colorScheme="teal"
@@ -129,8 +144,12 @@ const Index = () => {
                                 </Button>
                             </Link>
                         </ListItem>
+
                         <ListItem>
-                            <Link href="https://instagram.com/hackbiofficial" target="_blank">
+                            <Link
+                                href="https://instagram.com/hackbiofficial"
+                                target="_blank"
+                            >
                                 <Button
                                     variant="ghost"
                                     colorScheme="teal"
@@ -152,4 +171,3 @@ const Index = () => {
 }
 
 export default Index
-
