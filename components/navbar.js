@@ -22,6 +22,7 @@ import TrustBadge from './trust-badge'
 const LinkItem = ({ href, path, target, children, ...props }) => {
     const active = path === href
     const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
+
     return (
         <Link
             as={NextLink}
@@ -59,7 +60,7 @@ const Navbar = props => {
                 justify="space-between"
             >
                 <Flex align="center" mr={5}>
-                    <Heading as="h1" size="lg" letterSpacing={'tighter'}>
+                    <Heading as="h1" size="lg" letterSpacing="tighter">
                         <Logo />
                     </Heading>
                 </Flex>
@@ -72,24 +73,32 @@ const Navbar = props => {
                     flexGrow={1}
                     mt={{ base: 4, md: 0 }}
                 >
-                  {/*  <LinkItem href="/register" path={path}>
+                    {/*
+                    <LinkItem href="/register" path={path}>
                         Register
-                    </LinkItem>*/}
-                    <LinkItem href="#faq" path={path}>
+                    </LinkItem>
+                    */}
+
+                    <LinkItem href="/#faq" path={path}>
                         FAQ
                     </LinkItem>
+
                     <LinkItem href="/workshops" path={path}>
                         Workshops
                     </LinkItem>
+
                     <LinkItem href="/team" path={path}>
                         Team
                     </LinkItem>
+
                     <LinkItem href="/contact" path={path}>
                         Contact
                     </LinkItem>
+
                     <LinkItem href="/conduct" path={path}>
                         Conduct
                     </LinkItem>
+
                     <LinkItem
                         target="_blank"
                         href="https://github.com/devinlinux/hackbi-website"
@@ -107,7 +116,10 @@ const Navbar = props => {
                 <Box flex={1} align="right">
                     <ThemeToggleButton />
 
-                    <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
+                    <Box
+                        ml={2}
+                        display={{ base: 'inline-block', md: 'none' }}
+                    >
                         <Menu isLazy id="navbar-menu">
                             <MenuButton
                                 as={IconButton}
@@ -115,28 +127,41 @@ const Navbar = props => {
                                 variant="outline"
                                 aria-label="Options"
                             />
+
                             <MenuList>
                                 <Link as={NextLink} href="/">
                                     <MenuItem>Home</MenuItem>
                                 </Link>
-                                <Link as={NextLink} href="/mlh-pre-register">
-                                    <MenuItem>Pre-Register</MenuItem>
-                                </Link>
-                                <Link as={NextLink} href="/faq">
-                                    <MenuItem>FAQ</MenuItem>
-                                </Link>
+
+                                <MenuItem
+                                    as="a"
+                                    href="https://www.eventbrite.com/e/hackbi-x-tickets-1999722381474"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Register
+                                </MenuItem>
+
+                                <MenuItem as={NextLink} href="/#faq">
+                                    FAQ
+                                </MenuItem>
+
                                 <Link as={NextLink} href="/workshops">
                                     <MenuItem>Workshops</MenuItem>
                                 </Link>
+
                                 <Link as={NextLink} href="/team">
                                     <MenuItem>Team</MenuItem>
                                 </Link>
+
                                 <Link as={NextLink} href="/contact">
                                     <MenuItem>Contact</MenuItem>
                                 </Link>
+
                                 <Link as={NextLink} href="/conduct">
                                     <MenuItem>Conduct</MenuItem>
                                 </Link>
+
                                 <Link href="https://github.com/devinlinux/hackbi-website">
                                     <MenuItem>View Source</MenuItem>
                                 </Link>
@@ -145,7 +170,8 @@ const Navbar = props => {
                     </Box>
                 </Box>
             </Container>
-            <TrustBadge></TrustBadge>
+
+            <TrustBadge />
         </Box>
     )
 }
