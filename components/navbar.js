@@ -138,11 +138,12 @@ const Navbar = props => {
                                     href="https://www.eventbrite.com/e/hackbi-x-tickets-1999722381474"
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    color="#f0a822"
                                 >
                                     Register
                                 </MenuItem>
 
-                                <MenuItem as={NextLink} href="/#faq">
+                                <MenuItem as={NextLink} color="#f0a822" href="/#faq">
                                     FAQ
                                 </MenuItem>
 
