@@ -22,6 +22,7 @@ const SponsorBlock = () => {
     const hallowImg = `images/sponsors/hallow${useColorModeValue('-light', '-dark')}.png`
     const restonImg = `images/sponsors/reston${useColorModeValue('-light', '-dark')}.png`
     const iretonImg = `images/sponsors/bishopireton${useColorModeValue('-light', '-dark')}.png`
+    const codehsImg = `images/sponsors/codehsimage.png`
 
     return (
         <Box>
@@ -38,7 +39,7 @@ const SponsorBlock = () => {
             <Box my={2}>
                 <Center>
                     <Paragraph>
-                        Thanks to our <strong>2026</strong> Sponsors:
+                        Thanks to our <strong>2027</strong> Sponsors:
                     </Paragraph>
                 </Center>
             </Box>
@@ -61,13 +62,19 @@ const SponsorBlock = () => {
                     title="MLH"
                     thumbnail={mlhImg}
                 />
-                <Sponsor
+               {/* <Sponsor
                     href="https://www.cathyhackl.com"
                     title="Cathy Hackl"
                     thumbnail={hacklImg}
                 />
+                */}
+                <Sponsor
+                    href="https://codehs.com"
+                    title="CodeHS"
+                    thumbnail={codehsImg}
+                />
             </SimpleGrid>
-
+{/*
             <Box padding="20px"/>
 
             <SimpleGrid columns = {[2, 3, 4]} gap={6}>
@@ -112,6 +119,7 @@ const SponsorBlock = () => {
                     thumbnail="images/sponsors/paradigm.png"
                 />
             </SimpleGrid>
+            */}
         </Box>
     )
 }
