@@ -9,7 +9,7 @@ import AnimatedBox from '../components/animated-box'
 const Team = () => {
     const teamMembers = [
         {
-            src: "images/team/natepic2.jpg",
+            src: "images/team/default.jpeg",
             name: "Nathaniel DeGrandi",
             role: "Co-Director",
             bio: "Hello! My name is Nate DeGrandi, and I am a Bishop Ireton senior. I will be helping you as HackBI X’s co-director! This is my fourth year attending HackBI and my second as part of the team. I cannot wait to make HackBI as awesome as possible! Outside of HackBI I enjoy walking, reading, basketball, circuit design, and listening to J. Cole. In college, I plan on majoring in electrical engineering somewhere with plenty of snow!"
@@ -123,7 +123,7 @@ const Team = () => {
             bio: "Hello, my name is Silvia Modu and I’m a senior on the Hack BI’s Logistics team. This will be my first year attending Hack BI, but I’m excited to be a part of the process. I love all things STEM and I’m good at coordinating events and writing emails. I’m looking forward to being a critical part of the team."
         },
         {
-            src: "images/team/yohannapic.jpeg",
+            src: "images/team/default.jpeg",
             name: "Yohanna Girma",
             role: "Events Team Member",
             bio: "Hi, I'm Yohanna, and I'm a senior at Bishop Ireton. This is my first year being a part of HackBI, and I'm so excited to join the Events team! In my free time, I love to read, listen to music, and go on walks."
@@ -183,7 +183,7 @@ const Team = () => {
             bio: "Hello! My name is Davis Nguyen and I’m a senior at BI. This is my second year doing Hack BI and my first year on the team. I’m excited to be helping out the team this year with logistics. Besides that, I love music and anything related to music. Whether that’s listening to Paul McCartney, playing with the jazz band, or making music of my own."
         },
         {
-            src: "images/team/alanipic.jpeg",
+            src: "images/team/default.jpeg",
             name: "Alani Henning",
             role: "Events Team Member",
             bio: "Hi! I’m Alani Henning, a high school student interested in neuroengineering, neuroscience, and technology. I participate in crew, track, and Model UN, and I enjoy challenging myself through academics, teamwork, and problem-solving opportunities like hackathons. I’m especially interested in how engineering and neuroscience can be combined to improve people’s lives through innovation and research. Outside of school, I enjoy language learning, traveling, and exploring new ideas in science and tech."
