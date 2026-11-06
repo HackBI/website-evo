@@ -207,7 +207,7 @@ const Team = () => {
             bio: "Hello! My name is Caroline Reams. I'm a senior at Bishop Ireton. This is my first year with the Hack BI team. In my free time, I enjoy painting, drawing, and listening to music. I am also the head of the painting department for theater tech."
         },
         {
-            src: "images/team/ChristopherPic.jpeg",
+            src: "images/team/ChristopherPic.jpg",
             name: "Christopher Saint-Cyr",
             role: "Events Team Member",
             bio: "Hi, I'm Chris, and this is my First year working at Hack Bi! I am a member of the Events team, and I have participated in 8th grade, but not in my sophomore and freshman years. My mission as a member of the Events team is to help come up with ideas and reform old ones to make HackBi as successful as possible. I love stop motion, video games, video editing, and movies."
